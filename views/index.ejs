@@ -1,16 +1,26 @@
 <!DOCTYPE html>
 <html lang="en">
+
 	<head>
-        <title>Bacterial and Viral Bioinformatics Resource Center | BV-BRC</title>
+		<title>Midwest Alliance for Genomic Epidemiology</title>
 		<%- include('header') %>
+			<link rel="preconnect" href="https://fonts.googleapis.com">
+			<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+			<link
+				href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto+Slab:wght@100..900&display=swap"
+				rel="stylesheet">
 	</head>
+
 	<body class="claro patric <% if (request.isAuthenticated && request.isAuthenticated()) { %>Authenticated<% } %>">
-		<div id="ApplicationContainer" data-dojo-type="dijit/layout/BorderContainer" class="layoutContainer" data-dojo-props="id:'ApplicationContainer',gutters:false,liveSplitters:false">
-			<%- include('bv-brc-header') %>
-			<div data-dojo-type="dijit/layout/ContentPane" data-dojo-props="region:'center'" style="padding:0px;border:0px solid #ddd;background:inherit;">
-                <%- include('home') %>
-            </div>
+		<div id="ApplicationContainer" data-dojo-type="dijit/layout/BorderContainer" class="layoutContainer"
+			data-dojo-props="id:'ApplicationContainer',gutters:false,liveSplitters:false">
+			<%- include('maage-header') %>
+				<div data-dojo-type="dijit/layout/ContentPane" data-dojo-props="region:'center'"
+					style="padding:0px;border:0px solid #ddd;background:inherit;">
+					<%- include('home') %>
+				</div>
 		</div>
 		<%- include('javascript') %>
 	</body>
+
 </html>

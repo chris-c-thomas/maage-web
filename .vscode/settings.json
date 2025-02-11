@@ -3,5 +3,7 @@
 	"files.trimTrailingWhitespace": true,
     "search.exclude": {
         "public/js/release/": true
-    }
+    },
+    "editor.wordWrap": "on",
+    "editor.wordWrapColumn": 120
 }

@@ -1,0 +1,674 @@
+/* ".inherited-styles-for-exported-element" is a generated class for the inherited styles of the exported element, feel free to rename it. */
+
+.dijitInline, .dijitReset {
+    border-style: initial;
+    border-width: 0;
+  }
+
+  .dijitReset {
+    color: inherit;
+    font-family: inherit;
+    font-feature-settings: inherit;
+    font-kerning: inherit;
+    font-optical-sizing: inherit;
+    font-size: inherit;
+    font-size-adjust: inherit;
+    font-stretch: inherit;
+    font-style: inherit;
+    font-variant: inherit;
+    font-variant-emoji: inherit;
+    font-variant-position: inherit;
+    font-variation-settings: inherit;
+    font-weight: inherit;
+    line-height: normal;
+    margin: 0;
+  }
+
+  .dijitInline {
+    display: inline-block;
+    padding: 0;
+    vertical-align: middle;
+  }
+
+  table.dijitInline {
+    box-sizing: content-box;
+    display: inline-table;
+  }
+
+  .dijitInputContainer {
+    float: none !important;
+    overflow: hidden;
+    position: relative;
+  }
+
+  .dijitSelect .dijitButtonText {
+    float: left;
+    vertical-align: top;
+  }
+
+  table.dijitSelect {
+    border-collapse: separate;
+    padding: 0 !important;
+  }
+
+  .dijitValidationTextBox .dijitValidationContainer {
+    display: none;
+    float: right;
+    text-align: center;
+  }
+
+  .dijitSelect input.dijitInputField {
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+  }
+
+  .dijitButtonNode * {
+    vertical-align: middle;
+  }
+
+  .dijitButtonNode .dijitArrowButtonInner, .dijitSelect .dijitArrowButtonInner {
+    background-color: initial;
+  }
+
+  .dijitLeft {
+    background-position: left top;
+    background-repeat: no-repeat;
+  }
+
+  .dijitStretch {
+    background-repeat: repeat-x;
+  }
+
+  .dijitRight {
+    background-position: right top;
+  }
+
+  td.dijitButtonContents {
+    display: table-cell;
+  }
+
+  .dijitButtonNode {
+    margin: 0;
+    text-align: center;
+    vertical-align: middle;
+    white-space-collapse: collapse;
+    text-wrap-mode: nowrap;
+  }
+
+  .dijitSelect {
+    -webkit-tap-highlight-color: transparent;
+    cursor: pointer;
+  }
+
+  .dijitButtonNode, .dijitButtonNode *, .dijitSelect * {
+    -webkit-tap-highlight-color: transparent;
+    cursor: pointer;
+  }
+
+  .dijitTextBox {
+    vertical-align: middle;
+    width: 15em;
+  }
+
+  .dijitPlaceHolder {
+    pointer-events: none;
+    text-wrap-mode: nowrap;
+    white-space-collapse: collapse;
+    color: #aaa;
+    font-style: italic;
+    left: 0;
+    position: absolute;
+    top: 0;
+  }
+
+  .dijitSelect input, .dijitTextBox input {
+    float: left;
+  }
+
+  .dijitInputInner {
+    background-color: transparent !important;
+    border: 0 initial !important;
+    border-color: initial !important;
+    border-image: initial initial initial initial initial !important;
+    margin-left: 0 !important;
+    margin-right: 0 !important;
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+    width: 100% !important;
+  }
+
+  .dijitSelect input {
+    direction: ltr !important;
+    height: auto !important;
+    text-align: left !important;
+    text-indent: -2em !important;
+  }
+
+  .dijitSelect td {
+    line-height: 100%;
+  }
+
+  .dijitSelect .dijitSelectLabel {
+    vertical-align: baseline;
+  }
+
+  .dijitSelect .dijitButtonContents {
+    padding: 0;
+    white-space-collapse: collapse;
+    text-wrap-mode: nowrap;
+    border-style: none solid none none;
+    border-width: 1px;
+    text-align: left;
+  }
+
+  .dijitSelectFixedWidth .dijitButtonContents {
+    width: 100%;
+  }
+
+  .dijitSelect .dijitArrowButtonContainer {
+    border: 1px solid #fff;
+  }
+
+  .dijitSelect .dijitArrowButton {
+    background-color: #efefef;
+    background-repeat: repeat-x;
+    padding: 0;
+  }
+
+  .dijitButtonNode {
+    transition: background-color .3s;
+  }
+
+  .dijitButtonText {
+    text-align: center;
+  }
+
+  .dijitInputInner, .dijitTextBox {
+    color: #000;
+  }
+
+  .dijitSelect, .dijitSelect .dijitButtonContents, .dijitTextBox {
+    transition-duration: .35s;
+    transition-property: background-color, border;
+  }
+
+  .dijitSelect, .dijitTextBox {
+    background-color: #fff;
+  }
+
+  .dijitSelect .dijitButtonContents {
+    border-color: #b5bcc7;
+  }
+
+  .dijitSelect .dijitArrowButtonInner {
+    background-image: url(http://localhost:3020/form/images/commonFormArrows.png);
+    background-position: -35px 53%;
+    background-repeat: no-repeat;
+    margin: 0;
+    width: 16px;
+  }
+
+  .dijitSelectLabel, .dijitValidationTextBox .dijitValidationContainer {
+    padding: 1px 0;
+  }
+
+  .dijitTextBox .dijitInputInner {
+    padding-bottom: 1px;
+    padding-top: 1px;
+  }
+
+  h1 {
+    margin: 0 0 .5em;
+  }
+
+  h1, h3, p {
+    border-style: initial;
+    border-width: 0;
+    padding: 0;
+  }
+
+  h1, h3 {
+    font-weight: 700;
+    line-height: 1;
+  }
+
+  h3 {
+    font-size: 18px;
+  }
+
+  p {
+    font-weight: 300;
+    line-height: 1.5em;
+    margin: 0;
+  }
+
+  .bv-brc-info h3 {
+    margin: .5em 0;
+  }
+
+  .bv-brc-info .search .global-search {
+    margin-left: 16px;
+  }
+
+  .bv-brc-info .search .global-search .gs-data-types-dropdown .dijitInputField {
+    font-size: 14px;
+    padding: 12px 4px;
+  }
+
+  .bv-brc-info .search .global-search .gs-input .dijitInputField {
+    font-family: inherit;
+    font-size: 14px;
+    padding: 12px 8px;
+  }
+
+  .bv-brc-info .search .global-search .gs-input .dijitPlaceHolder {
+    font-size: 14px;
+    padding: 12px 8px;
+  }
+
+  .bv-brc-info .search .global-search .gs-options-dropdown .dijitInputField {
+    font-size: 14px;
+    padding: 12px 4px;
+  }
+
+  @media (max-width: 991px) {
+    .bv-brc-info {
+      grid-column-end: 3;
+      grid-column-start: 1;
+      grid-row-end: 3;
+      grid-row-start: 2;
+    }
+  }
+
+  @media (min-width: 992px) {
+    .bv-brc-info {
+      grid-column-end: 3;
+      grid-column-start: 1;
+      grid-row-end: 3;
+      grid-row-start: 1;
+    }
+  }
+
+  div.bv-brc-info {
+    background-color: #f8fbf9 !important;
+    border-bottom: 4px solid #436d58;
+    border-color: initial;
+    border-left-width: 0;
+    border-right-width: 0;
+    border-style: initial;
+    border-top-width: 0;
+    color: #333;
+    font-family: "Noto Serif", Roboto, sans-serif;
+    line-height: 1.5;
+    margin: 0;
+    padding: 15px 10px;
+  }
+
+  div.bv-brc-info > h1 {
+    font-size: 30px;
+  }
+
+  div.bv-brc-info > h1, div.search > h3 {
+    color: #26292c;
+    font-family: "Roboto Slab", Arial, Helvetica, sans-serif;
+  }
+
+  div.bv-brc-info > p {
+    color: #26292c;
+    font-family: "Noto Serif", Arial, Helvetica, sans-serif;
+    font-size: 15px;
+  }
+
+  div.bv-brc-info > div.search {
+    margin: 10px 0 0;
+  }
+
+  div#dijit__FocusMixin_1 > table.GStable > tbody.GSbody {
+    border-color: #436d58;
+    border-style: solid;
+  }
+
+  div.bv-brc-info > p > a.navigationLinkOut {
+    color: #436d58;
+  }
+
+  div.bv-brc-info > p > a.navigationLinkOut:hover {
+    color: #609c7e;
+  }
+
+  div.bv-brc-info > p > a:nth-child(2) {
+    color: #436d58;
+  }
+
+  div.bv-brc-info > p > a:nth-child(2):hover {
+    color: #609c7e;
+  }
+
+  [class*=" icon-"] {
+    font-variant: normal;
+    speak: none;
+    font-variant-emoji: normal;
+    font-weight: 400;
+    line-height: 1;
+    text-transform: none;
+    -webkit-font-smoothing: antialiased;
+    font-family: icomoon !important;
+  }
+
+  .icon-search::before {
+    content: "";
+  }
+
+  .icon-question-circle-o::before {
+    content: "";
+  }
+
+  input {
+    margin: 0;
+  }
+
+  .inherited-styles-for-exported-element {
+    font-size: .9em;
+    font-size-adjust: none;
+    font-weight: 400;
+  }
+
+  table {
+    font-size: 100%;
+    width: 100%;
+  }
+
+  div, input {
+    padding: 0;
+  }
+
+  a, tbody, td, tr {
+    padding: 0;
+  }
+
+  a, div, span, table, tbody, td, tr {
+    border-style: initial;
+    border-width: 0;
+  }
+
+  a, div, span, tbody, td, tr {
+    margin: 0;
+  }
+
+  a, a:visited {
+    color: #09456f;
+    cursor: pointer;
+    text-decoration: none;
+  }
+
+  a:hover {
+    color: #34698e;
+    text-decoration: underline;
+  }
+
+  :focus {
+    outline: 0;
+  }
+
+  .fa {
+    color: #333;
+    cursor: pointer;
+  }
+
+  .fa:hover {
+    color: #e75200;
+  }
+
+  .GlobalSearch .dijitSelect, .GlobalSearch .dijitTextBox {
+    border-radius: 4px;
+    border-style: initial;
+    border-width: 0;
+    margin: 0;
+  }
+
+  .GlobalSearch > table {
+    border-collapse: collapse;
+    border-radius: 4px;
+    margin: 0;
+    padding: 0;
+    -webkit-border-horizontal-spacing: 0;
+    -webkit-border-vertical-spacing: 0;
+    width: 100%;
+  }
+
+  .GlobalSearch {
+    background-color: #fff;
+    border-radius: 4px;
+    padding: 0;
+  }
+
+  .dijitButtonNode {
+    background-image: none;
+  }
+
+  .sr-only {
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: 1px;
+    clip: rect(0, 0, 0, 0);
+    border-style: initial;
+    border-width: 0;
+  }
+
+  @font-face {
+    font-family: icomoon;
+    font-style: normal;
+    font-weight: 400;
+    src: url(http://localhost:3020/fonts/icomoon.ttf?3jh5az) format("truetype"), url(http://localhost:3020/fonts/icomoon.woff?3jh5az) format("woff");
+  }
+
+  @font-face {
+    font-display: swap;
+    font-family: "Roboto Slab";
+    font-style: normal;
+    font-weight: 100 900;
+    src: url(https://fonts.gstatic.com/s/robotoslab/v34/BngMUXZYTXPIvIBgJJSb6ufA5qWr4xCCQ_k.woff2) format("woff2");
+    unicode-range: U+460-52F, U+1C80-1C8A, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
+  }
+
+  @font-face {
+    font-display: swap;
+    font-family: "Roboto Slab";
+    font-style: normal;
+    font-weight: 100 900;
+    src: url(https://fonts.gstatic.com/s/robotoslab/v34/BngMUXZYTXPIvIBgJJSb6ufJ5qWr4xCCQ_k.woff2) format("woff2");
+    unicode-range: U+301, U+400-45F, U+490-491, U+4B0-4B1, U+2116;
+  }
+
+  @font-face {
+    font-display: swap;
+    font-family: "Roboto Slab";
+    font-style: normal;
+    font-weight: 100 900;
+    src: url(https://fonts.gstatic.com/s/robotoslab/v34/BngMUXZYTXPIvIBgJJSb6ufB5qWr4xCCQ_k.woff2) format("woff2");
+    unicode-range: U+1F00-1FFF;
+  }
+
+  @font-face {
+    font-display: swap;
+    font-family: "Roboto Slab";
+    font-style: normal;
+    font-weight: 100 900;
+    src: url(https://fonts.gstatic.com/s/robotoslab/v34/BngMUXZYTXPIvIBgJJSb6ufO5qWr4xCCQ_k.woff2) format("woff2");
+    unicode-range: U+370-377, U+37A-37F, U+384-38A, U+38C, U+38E-3A1, U+3A3-3FF;
+  }
+
+  @font-face {
+    font-display: swap;
+    font-family: "Roboto Slab";
+    font-style: normal;
+    font-weight: 100 900;
+    src: url(https://fonts.gstatic.com/s/robotoslab/v34/BngMUXZYTXPIvIBgJJSb6ufC5qWr4xCCQ_k.woff2) format("woff2");
+    unicode-range: U+102-103, U+110-111, U+128-129, U+168-169, U+1A0-1A1, U+1AF-1B0, U+300-301, U+303-304, U+308-309, U+323, U+329, U+1EA0-1EF9, U+20AB;
+  }
+
+  @font-face {
+    font-display: swap;
+    font-family: "Roboto Slab";
+    font-style: normal;
+    font-weight: 100 900;
+    src: url(https://fonts.gstatic.com/s/robotoslab/v34/BngMUXZYTXPIvIBgJJSb6ufD5qWr4xCCQ_k.woff2) format("woff2");
+    unicode-range: U+100-2BA, U+2BD-2C5, U+2C7-2CC, U+2CE-2D7, U+2DD-2FF, U+304, U+308, U+329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
+  }
+
+  @font-face {
+    font-display: swap;
+    font-family: "Roboto Slab";
+    font-style: normal;
+    font-weight: 100 900;
+    src: url(https://fonts.gstatic.com/s/robotoslab/v34/BngMUXZYTXPIvIBgJJSb6ufN5qWr4xCC.woff2) format("woff2");
+    unicode-range: U+0-FF, U+131, U+152-153, U+2BB-2BC, U+2C6, U+2DA, U+2DC, U+304, U+308, U+329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+  }
+
+  @font-face {
+    font-display: swap;
+    font-family: "Noto Serif";
+    font-stretch: 100%;
+    font-style: italic;
+    font-weight: 100 900;
+    src: url(https://fonts.gstatic.com/s/notoserif/v23/ga6faw1J5X9T9RW6j9bNfFIMZhhWnFTyNZIQD1-_P3Lct_NFiQhhYQ.woff2) format("woff2");
+    unicode-range: U+460-52F, U+1C80-1C8A, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
+  }
+
+  @font-face {
+    font-display: swap;
+    font-family: "Noto Serif";
+    font-stretch: 100%;
+    font-style: italic;
+    font-weight: 100 900;
+    src: url(https://fonts.gstatic.com/s/notoserif/v23/ga6faw1J5X9T9RW6j9bNfFIMZhhWnFTyNZIQD1-_P3vct_NFiQhhYQ.woff2) format("woff2");
+    unicode-range: U+301, U+400-45F, U+490-491, U+4B0-4B1, U+2116;
+  }
+
+  @font-face {
+    font-display: swap;
+    font-family: "Noto Serif";
+    font-stretch: 100%;
+    font-style: italic;
+    font-weight: 100 900;
+    src: url(https://fonts.gstatic.com/s/notoserif/v23/ga6faw1J5X9T9RW6j9bNfFIMZhhWnFTyNZIQD1-_P3Pct_NFiQhhYQ.woff2) format("woff2");
+    unicode-range: U+1F00-1FFF;
+  }
+
+  @font-face {
+    font-display: swap;
+    font-family: "Noto Serif";
+    font-stretch: 100%;
+    font-style: italic;
+    font-weight: 100 900;
+    src: url(https://fonts.gstatic.com/s/notoserif/v23/ga6faw1J5X9T9RW6j9bNfFIMZhhWnFTyNZIQD1-_P3zct_NFiQhhYQ.woff2) format("woff2");
+    unicode-range: U+370-377, U+37A-37F, U+384-38A, U+38C, U+38E-3A1, U+3A3-3FF;
+  }
+
+  @font-face {
+    font-display: swap;
+    font-family: "Noto Serif";
+    font-stretch: 100%;
+    font-style: italic;
+    font-weight: 100 900;
+    src: url(https://fonts.gstatic.com/s/notoserif/v23/ga6faw1J5X9T9RW6j9bNfFIMZhhWnFTyNZIQD1-_P3Dct_NFiQhhYQ.woff2) format("woff2");
+    unicode-range: U+102-103, U+110-111, U+128-129, U+168-169, U+1A0-1A1, U+1AF-1B0, U+300-301, U+303-304, U+308-309, U+323, U+329, U+1EA0-1EF9, U+20AB;
+  }
+
+  @font-face {
+    font-display: swap;
+    font-family: "Noto Serif";
+    font-stretch: 100%;
+    font-style: italic;
+    font-weight: 100 900;
+    src: url(https://fonts.gstatic.com/s/notoserif/v23/ga6faw1J5X9T9RW6j9bNfFIMZhhWnFTyNZIQD1-_P3Hct_NFiQhhYQ.woff2) format("woff2");
+    unicode-range: U+100-2BA, U+2BD-2C5, U+2C7-2CC, U+2CE-2D7, U+2DD-2FF, U+304, U+308, U+329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
+  }
+
+  @font-face {
+    font-display: swap;
+    font-family: "Noto Serif";
+    font-stretch: 100%;
+    font-style: italic;
+    font-weight: 100 900;
+    src: url(https://fonts.gstatic.com/s/notoserif/v23/ga6faw1J5X9T9RW6j9bNfFIMZhhWnFTyNZIQD1-_P3_ct_NFiQg.woff2) format("woff2");
+    unicode-range: U+0-FF, U+131, U+152-153, U+2BB-2BC, U+2C6, U+2DA, U+2DC, U+304, U+308, U+329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+  }
+
+  @font-face {
+    font-display: swap;
+    font-family: "Noto Serif";
+    font-stretch: 100%;
+    font-style: normal;
+    font-weight: 100 900;
+    src: url(https://fonts.gstatic.com/s/notoserif/v23/ga6daw1J5X9T9RW6j9bNVls-hfgvz8JcMofYTYf3D33WsNFHuQk.woff2) format("woff2");
+    unicode-range: U+460-52F, U+1C80-1C8A, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
+  }
+
+  @font-face {
+    font-display: swap;
+    font-family: "Noto Serif";
+    font-stretch: 100%;
+    font-style: normal;
+    font-weight: 100 900;
+    src: url(https://fonts.gstatic.com/s/notoserif/v23/ga6daw1J5X9T9RW6j9bNVls-hfgvz8JcMofYTYf-D33WsNFHuQk.woff2) format("woff2");
+    unicode-range: U+301, U+400-45F, U+490-491, U+4B0-4B1, U+2116;
+  }
+
+  @font-face {
+    font-display: swap;
+    font-family: "Noto Serif";
+    font-stretch: 100%;
+    font-style: normal;
+    font-weight: 100 900;
+    src: url(https://fonts.gstatic.com/s/notoserif/v23/ga6daw1J5X9T9RW6j9bNVls-hfgvz8JcMofYTYf2D33WsNFHuQk.woff2) format("woff2");
+    unicode-range: U+1F00-1FFF;
+  }
+
+  @font-face {
+    font-display: swap;
+    font-family: "Noto Serif";
+    font-stretch: 100%;
+    font-style: normal;
+    font-weight: 100 900;
+    src: url(https://fonts.gstatic.com/s/notoserif/v23/ga6daw1J5X9T9RW6j9bNVls-hfgvz8JcMofYTYf5D33WsNFHuQk.woff2) format("woff2");
+    unicode-range: U+370-377, U+37A-37F, U+384-38A, U+38C, U+38E-3A1, U+3A3-3FF;
+  }
+
+  @font-face {
+    font-display: swap;
+    font-family: "Noto Serif";
+    font-stretch: 100%;
+    font-style: normal;
+    font-weight: 100 900;
+    src: url(https://fonts.gstatic.com/s/notoserif/v23/ga6daw1J5X9T9RW6j9bNVls-hfgvz8JcMofYTYf1D33WsNFHuQk.woff2) format("woff2");
+    unicode-range: U+102-103, U+110-111, U+128-129, U+168-169, U+1A0-1A1, U+1AF-1B0, U+300-301, U+303-304, U+308-309, U+323, U+329, U+1EA0-1EF9, U+20AB;
+  }
+
+  @font-face {
+    font-display: swap;
+    font-family: "Noto Serif";
+    font-stretch: 100%;
+    font-style: normal;
+    font-weight: 100 900;
+    src: url(https://fonts.gstatic.com/s/notoserif/v23/ga6daw1J5X9T9RW6j9bNVls-hfgvz8JcMofYTYf0D33WsNFHuQk.woff2) format("woff2");
+    unicode-range: U+100-2BA, U+2BD-2C5, U+2C7-2CC, U+2CE-2D7, U+2DD-2FF, U+304, U+308, U+329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
+  }
+
+  @font-face {
+    font-display: swap;
+    font-family: "Noto Serif";
+    font-stretch: 100%;
+    font-style: normal;
+    font-weight: 100 900;
+    src: url(https://fonts.gstatic.com/s/notoserif/v23/ga6daw1J5X9T9RW6j9bNVls-hfgvz8JcMofYTYf6D33WsNFH.woff2) format("woff2");
+    unicode-range: U+0-FF, U+131, U+152-153, U+2BB-2BC, U+2C6, U+2DA, U+2DC, U+304, U+308, U+329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+  }
+
+
+
+
+
