@@ -651,3 +651,166 @@ h2 {
   margin-bottom: 16px;
 }
 }
+
+div#uniqName_18_0 {
+  border-bottom-width: 0;
+  border-right-width: 0;
+  border-top-width: 0;
+  background-color: #63949A;
+}
+
+div#uniqName_18_0 > div.ActionButtonWrapper:nth-child(1) {
+  color: #F7F4ED;
+}
+
+div#uniqName_18_0 > div.ActionButtonWrapper:nth-child(2) {
+  color: #F7F4ED;
+}
+
+div.ActionButtonWrapper:nth-child(2) > div.ActionButtonText {
+  color: #F7F4ED;
+  font-size: .6em;
+  margin: 0;
+  text-align: center;
+}
+
+div#uniqName_18_0 > div.ActionButtonWrapper:nth-child(1) > div.ActionButtonText {
+  color: #F7F4ED;
+  font-size: .6em;
+  margin: 0;
+  text-align: center;
+}
+
+div#uniqName_18_0 > div.ActionButtonWrapper:nth-child(3) {
+  color: #F7F4ED;
+}
+
+div.ActionButtonWrapper:nth-child(3) > div.ActionButtonText {
+  color: #F7F4ED;
+  font-size: .6em;
+  margin: 0;
+  text-align: center;
+}
+
+div.ActionButtonWrapper:nth-child(4) > div.ActionButtonText {
+  color: #F7F4ED;
+  font-size: .6em;
+  margin: 0;
+  text-align: center;
+}
+
+div.dijitHidden.ActionButtonWrapper:nth-child(5) > div.ActionButtonText {
+  color: #F7F4ED;
+  font-size: .6em;
+  margin: 0;
+  text-align: center;
+}
+
+div.dijitHidden.ActionButtonWrapper:nth-child(6) > div.ActionButtonText {
+  color: #F7F4ED;
+  font-size: .6em;
+  margin: 0;
+  text-align: center;
+}
+
+div.dijitHidden.ActionButtonWrapper:nth-child(7) > div.ActionButtonText {
+  color: #F7F4ED;
+  font-size: .6em;
+  margin: 0;
+  text-align: center;
+}
+
+div.ActionButtonWrapper:nth-child(2) > div.ActionButton.fa.icon-info-circle.fa-2x {
+  -webkit-font-smoothing: antialiased;
+  speak: none;
+  color: #F7F4ED;
+}
+
+div#uniqName_18_0 {
+  border-bottom-width: 0;
+  border-right-width: 0;
+  border-top-width: 0;
+  background-color: #63949A;
+}
+
+div#uniqName_18_0 > div.ActionButtonWrapper:nth-child(1) {
+  color: #F7F4ED;
+}
+
+div#uniqName_18_0 > div.ActionButtonWrapper:nth-child(2) {
+  color: #F7F4ED;
+}
+
+div.ActionButtonWrapper:nth-child(2) > div.ActionButtonText {
+  color: #F7F4ED;
+  font-size: .6em;
+  margin: 0;
+  text-align: center;
+}
+
+div#uniqName_18_0 > div.ActionButtonWrapper:nth-child(1) > div.ActionButtonText {
+  color: #F7F4ED;
+  font-size: .6em;
+  margin: 0;
+  text-align: center;
+}
+
+div#uniqName_18_0 > div.ActionButtonWrapper:nth-child(3) {
+  color: #F7F4ED;
+}
+
+div.ActionButtonWrapper:nth-child(3) > div.ActionButtonText {
+  color: #F7F4ED;
+  font-size: .6em;
+  margin: 0;
+  text-align: center;
+}
+
+div.ActionButtonWrapper:nth-child(4) > div.ActionButtonText {
+  color: #F7F4ED;
+  font-size: .6em;
+  margin: 0;
+  text-align: center;
+}
+
+div.dijitHidden.ActionButtonWrapper:nth-child(5) > div.ActionButtonText {
+  color: #F7F4ED;
+  font-size: .6em;
+  margin: 0;
+  text-align: center;
+}
+
+div.dijitHidden.ActionButtonWrapper:nth-child(6) > div.ActionButtonText {
+  color: #F7F4ED;
+  font-size: .6em;
+  margin: 0;
+  text-align: center;
+}
+
+div.dijitHidden.ActionButtonWrapper:nth-child(7) > div.ActionButtonText {
+  color: #F7F4ED;
+  font-size: .6em;
+  margin: 0;
+  text-align: center;
+}
+
+div.ActionButtonWrapper:nth-child(2) > div.ActionButton.fa.icon-info-circle.fa-2x {
+  -webkit-font-smoothing: antialiased;
+  speak: none;
+  color: #F7F4ED;
+}
+
+#maage-header span#maage-logo-link {
+  font-weight: 500;
+  font-size: 36px;
+  padding: 0 0 0 30px;
+}
+
+#maage-header div#bv-brc-header-container {
+  font-family: 'Roboto Slab';
+  font-size: 16px;
+}
+
+#maage-header div#bv-brc-header {
+  height: 50px;
+}

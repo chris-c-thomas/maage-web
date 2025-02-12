@@ -1,6 +1,6 @@
 div#bv-brc-header-container>div:nth-child(2) {
   flex: 1 1 0;
-  font-family: "Noto Sans", sans-serif;
+  font-family: "Poppins", sans-serif;
   font-size: 14px;
   font-weight: 400;
   margin: -4px 0 0;
@@ -8,7 +8,7 @@ div#bv-brc-header-container>div:nth-child(2) {
 
 div#bv-brc-header {
   background-color: #9cc2af;
-  font-family: 'Noto Sans', sans-serif !important;
+  font-family: 'Poppins', sans-serif !important;
   font-weight: 300 !important;
   font-size: 14px;
   height: 40px;
@@ -657,10 +657,7 @@ div#bv-brc-header-container>div.nav-logo {
 }
 
 #bv-brc-header #bv-brc-header-container #maage-logo-link {
-  font: 'Roboto Slab', serif !important;
-  font-size: 20px !important;
-  font-weight: bold !important;
-  color: #26292c !important;
+
 }
 
 span#maage-logo-link {
@@ -668,8 +665,8 @@ span#maage-logo-link {
   border-width: 0;
   color: #26292C;
   cursor: pointer;
-  font-family: 'Roboto Slab', serif;
-  font-size: 20px;
+  font-family: 'Roboto Slab';
+  font-size: 32px;
   font-size-adjust: none;
   font-weight: 700;
   line-height: 1.5;
