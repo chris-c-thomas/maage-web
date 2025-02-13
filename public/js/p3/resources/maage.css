@@ -814,3 +814,130 @@ div.ActionButtonWrapper:nth-child(2) > div.ActionButton.fa.icon-info-circle.fa-2
 #maage-header div#bv-brc-header {
   height: 50px;
 }
+
+div#dijit_layout_ContentPane_1 {
+  padding: 0!important;
+}
+
+
+
+div.announcements.card.shadow-2xl.rounded-xl:nth-child(2) > h2 {
+  font-family: Poppins;
+}
+
+div.announcements.card.shadow-2xl.rounded-xl:nth-child(3) > h2 {
+  font-family: Poppins;
+}
+
+div.mid-content-section:nth-child(4) > h3 {
+  font-weight: 500;
+}
+
+div.mid-content-section:nth-child(1) > h3 {
+  font-weight: 500;
+}
+
+div.mid-content-section:nth-child(2) > h3 {
+  font-weight: 500;
+}
+
+div.mid-content-section:nth-child(3) > h3 {
+  font-weight: 500;
+}
+
+div.mid-content-section:nth-child(3) > div.mid-links {
+  font-weight: 300;
+}
+
+div.mid-content-section:nth-child(3) > div.mid-links > a:nth-child(5) {
+  font-weight: normal;
+}
+
+div.mid-content-section:nth-child(2) > div.mid-links > a:nth-child(5) {
+  font-family: Noto Sans;
+  text-decoration: underline;
+}
+
+div.mid-content-section:nth-child(2) > div.mid-links > a.navigationLink:nth-child(4) {
+  color: #436D5A;
+  font-family: Noto Sans;
+  font-weight: 300;
+  text-decoration: underline;
+  text-decoration: underline;
+  text-decoration-line: none;
+  text-decoration-style: solid;
+}
+
+div.mid-content-section:nth-child(2) > div.mid-links > a.navigationLink:nth-child(1) {
+  font-family: Noto Sans;
+  font-weight: 300;
+}
+
+div.mid-content-section:nth-child(2) > div.mid-links > a.navigationLink:nth-child(2) {
+  font-family: Noto Sans;
+  font-weight: 300;
+}
+
+div.mid-content-section:nth-child(2) > div.mid-links > a.navigationLink:nth-child(3) {
+  font-family: Noto Sans;
+  font-weight: 300;
+}
+
+div.mid-content-section:nth-child(1) > div.mid-links > a.navigationLink:nth-child(1) {
+  font-family: Noto Sans;
+  font-weight: 300;
+}
+
+div.mid-content-section:nth-child(1) > div.mid-links > a:nth-child(5) {
+  font-family: Noto Sans;
+}
+
+div.mid-content-section:nth-child(1) > div.mid-links > a.navigationLink:nth-child(4) {
+  font-family: Noto Sans;
+  font-weight: 300;
+}
+
+div.mid-content-section:nth-child(1) > div.mid-links > a.navigationLink:nth-child(3) {
+  font-family: Noto Sans;
+  font-weight: 300;
+}
+
+div.mid-content-section:nth-child(1) > div.mid-links > a.navigationLink:nth-child(2) {
+  font-family: Noto Sans;
+  font-weight: 300;
+}
+
+div.mid-content-section:nth-child(4) > div.mid-links > a:nth-child(1) {
+  font-family: Noto Sans;
+  font-weight: 300;
+}
+
+div.mid-content-section:nth-child(4) > div.mid-links > a:nth-child(2) {
+  font-family: Noto Sans;
+  font-weight: 300;
+}
+
+div.mid-content-section:nth-child(4) > div.mid-links > a:nth-child(3) {
+  font-family: Noto Sans;
+  font-weight: 300;
+}
+
+.bv-brc-mid-content-links .mid-content-section .mid-links a {
+  font-family: Noto Sans!important;
+  font-weight: 300!important;
+  font-size: 14px!important;
+}
+
+#maage-home div.bv-brc-info.card.shadow-2xl.rounded-xl > p > a.navigationLinkOut {
+  font-weight: 500;
+}
+
+#maage-home div.bv-brc-info.card.shadow-2xl.rounded-xl > p > a:nth-child(2) {
+  font-weight: 500;
+}
+
+.bv-brc-bottom .dashboard-section {
+  padding: 20px;
+  border-radius: 6px;
+  background: #ffffff;
+}

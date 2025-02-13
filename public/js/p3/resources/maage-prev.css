@@ -901,3 +901,7 @@ footer.maage-footer {
 .mf-container{
   position: static;
 }
+
+div#dijit_layout_ContentPane_1 {
+  padding: 0!important;
+}
