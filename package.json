@@ -51,14 +51,11 @@
     "webcola": "^3.4.0"
   },
   "devDependencies": {
-    "autochangelog": "^3.0.3",
     "cross-env": "^7.0.3",
-    "eslint": "^9.20.1",
     "eslint-config-airbnb-base": "^15.0.0",
     "eslint-plugin-import": "^2.29.1",
     "gulp-replace": "^1.1.4",
     "minimatch": "^9.0.4",
-    "prettier": "^3.5.1",
     "stylelint": "^16.5.0",
     "stylelint-config-standard": "^36.0.0"
   }
