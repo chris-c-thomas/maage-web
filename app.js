@@ -28,6 +28,7 @@ var help = require('./routes/help');
 var app = express();
 var httpProxy = require('http-proxy');
 var apiProxy = httpProxy.createProxyServer();
+var maintenanceMode = config.get('maintenanceMode') || process.env.MAINTENANCE_MODE === 'true';
 
 // view engine setup
 app.set('views', path.join(__dirname, 'views'));
@@ -120,6 +121,16 @@ app.use('/public/pdfs/', [
     res.redirect('https://docs.patricbrc.org/tutorial/');
   }
 ]);
+
+app.use((req, res, next) => {
+  if (maintenanceMode && !req.url.startsWith('/admin')) {
+  res.status(503).render('503', { title: '503 Service Unavailable' });
+  } else {
+  next();
+  }
+});
+
+
 app.use('/patric/', express.static(path.join(__dirname, 'public/patric/')));
 app.use('/maage/', express.static(path.join(__dirname, 'public/maage/')));
 app.use('/public/', express.static(path.join(__dirname, 'public/')));
