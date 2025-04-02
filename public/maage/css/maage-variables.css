@@ -1,0 +1,125 @@
+
+
+:root {
+  --maage-font-heading: 'Poppins', sans-serif;
+  --maage-font-text: 'Inter', sans-serif;
+  --maage-font-mono: 'JetBrains Mono', monospace;
+
+  --maage-bg-default: #f8f9fa;
+  --maage-bg-subtle: #f1f3f5;
+  --maage-bg-muted: #e9ecef;
+  --maage-surface: #ffffff;
+  --maage-border: #dee2e6;
+
+  --maage-text-default: #212529;
+  --maage-text-muted: #495057;
+  --maage-text-subtle: #6c757d;
+  --maage-text-inverse: #f8f9fa;
+  --maage-text-link: var(--maage-secondary-600);
+
+  --maage-success-50:  #f2fbf5;
+  --maage-success-500: #4ba675;
+  --maage-success-600: #3d8d61;
+
+  --maage-warning-50:  #fff9eb;
+  --maage-warning-500: #f0b429;
+  --maage-warning-600: #d99a1c;
+
+  --maage-error-50:    #fef2f2;
+  --maage-error-500:   #d9534f;
+  --maage-error-600:   #c0392b;
+
+  --maage-info-50:     #eef6fb;
+  --maage-info-500:    #5b9bd5;
+  --maage-info-600:    #417cbf;
+
+
+    --maage-bg-default: #121416;
+    --maage-bg-subtle: #1c1f22;
+    --maage-bg-muted: #2a2d30;
+    --maage-surface: #1e2124;
+    --maage-border: #33383c;
+
+    --maage-text-default: #f8f9fa;
+    --maage-text-muted: #ced4da;
+    --maage-text-subtle: #adb5bd;
+    --maage-text-inverse: #121416;
+    --maage-text-link: var(--maage-secondary-300);
+
+    --maage-success-50:  #052e1a;
+    --maage-success-500: #5ecf95;
+    --maage-success-600: #3cb678;
+
+    --maage-warning-50:  #3e2e03;
+    --maage-warning-500: #ffc74d;
+    --maage-warning-600: #e6a100;
+
+    --maage-error-50:    #3b0a0a;
+    --maage-error-500:   #f27b74;
+    --maage-error-600:   #d9534f;
+
+    --maage-info-50:     #102333;
+    --maage-info-500:    #7dbded;
+    --maage-info-600:    #5b9bd5;
+
+
+
+  --maage-primary-50: #f6f9f8;
+  --maage-primary-100: #e5f1e9;
+  --maage-primary-200: #d2e5db;
+  --maage-primary-300: #b3d1c2;
+  --maage-primary-400: #92baa8;
+  --maage-primary-500: #5b9f83;
+  --maage-primary-600: #44856e;
+  --maage-primary-700: #3b735e;
+  --maage-primary-800: #315d4c;
+  --maage-primary-900: #2a4b40;
+  --maage-primary-950: #192f28;
+
+  --maage-secondary-50: #f5f9fa;
+  --maage-secondary-100: #e7f0f3;
+  --maage-secondary-200: #d2e4ea;
+  --maage-secondary-300: #b3d0db;
+  --maage-secondary-400: #8fb7c6;
+  --maage-secondary-500: #679fb7;
+  --maage-secondary-600: #4d85a2;
+  --maage-secondary-700: #446c83;
+  --maage-secondary-800: #3c5867;
+  --maage-secondary-900: #344855;
+  --maage-secondary-950: #1d2b35;
+
+  --maage-tertiary-50: #fefcf5;
+  --maage-tertiary-100: #fdf7e6;
+  --maage-tertiary-200: #faeccc;
+  --maage-tertiary-300: #f4dfb0;
+  --maage-tertiary-400: #eacb89;
+  --maage-tertiary-500: #ddaf60;
+  --maage-tertiary-600: #c79547;
+  --maage-tertiary-700: #a87634;
+  --maage-tertiary-800: #895c2b;
+  --maage-tertiary-900: #6c4723;
+  --maage-tertiary-950: #3c2913;
+
+  /* === Data Visualization === */
+  --maage-dataviz-1: #5fa588;
+  --maage-dataviz-2: #679fb7;
+  --maage-dataviz-3: #ecc188;
+  --maage-dataviz-4: #b3d1c2;
+  --maage-dataviz-5: #b3d0db;
+  --maage-dataviz-6: #f4dfb3;
+  --maage-dataviz-7: #498d73;
+  --maage-dataviz-8: #4d85a2;
+  --maage-dataviz-9: #da8640;
+  --maage-dataviz-10: #8fb7c6;
+  --maage-dataviz-11: #efca92;
+  --maage-dataviz-12: #d2e5db;
+  --maage-dataviz-13: #446c83;
+  --maage-dataviz-14: #be6a2e;
+  --maage-dataviz-15: #e5aa6d;
+  --maage-dataviz-16: #3b735e;
+  --maage-dataviz-17: #3c5867;
+  --maage-dataviz-18: #9a5929;
+  --maage-dataviz-19: #5b9bd5;
+  --maage-dataviz-20: #4ba675;
+}
+

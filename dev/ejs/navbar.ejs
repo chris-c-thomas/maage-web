@@ -1,0 +1,202 @@
+<div data-dojo-type="dijit/layout/ContentPane" class="HeaderBar maage-navbar" data-dojo-props="region:'top'">
+
+    <div class="navbar-wrapper">
+      <link rel="stylesheet" href="../public/css/maage/navbar.css">
+      <div class="maage-nav navbar">
+          <div class="navbar-left">
+              <div class="logo cursor-pointer" style="display: flex; align-items: center;">
+                <a href="/" style="display: flex; align-items: center;" class="hover:scale-110 transition-transform duration-200 hover:cursor-pointer"></a>
+                    <span><img src="/patric/images/maage/maage-logo.png" alt="MAAGE Logo" style="width: 40px; height: auto; margin-right: 10px;" /></span>
+                    <span class="font-poppins font-medium text-[38px] text-[var(--maage-secondary-600)]">MA</span>
+                    <span class="font-poppins font-light ml-[2px] text-[38px] text-[var(--maage-secondary-800)]">AGE</span>
+                </a>
+              </div>
+              <div class="nav-items" id="nav-items">
+                  <div class="nav-item">
+                      <a href="#">Organisms<i class="fas fa-chevron-down dropdown-icon"></i></a>
+                      <div class="dropdown-content">
+                          <div class="dropdown-section">
+                              <h3>Bacteria</h3>
+                              <a href="/view/Taxonomy/194#view_tab=overview">Campylobacter</a>
+                              <a href="/view/Taxonomy/1637#view_tab=overview">Listeria</a>
+                              <a href="/view/Taxonomy/561#view_tab=overview">Escherichia</a>
+                              <a href="/view/Taxonomy/590#view_tab=overview">Salmonella</a>
+                              <a href="/view/Bacteria/2">All Bacteria</a>
+                          </div>
+                          <div class="dropdown-section">
+                              <h3>Viruses</h3>
+                              <a href="/view/Taxonomy/11320#view_tab=overview">Influenza A virus</a>
+                              <a href="/view/Taxonomy/2697049#view_tab=overview">SARS-CoV-2</a>
+                              <a href="/view/Taxonomy/10244#view_tab=overview">Monkeypox virus</a>
+                              <a href="/view/Taxonomy/10239">All Viruses</a>
+                          </div>
+                          <div class="dropdown-section">
+                              <h3>Metagenomes</h3>
+                              <a href="/view/Taxonomy/1637#view_tab=overview">SARS-CoV-2 Wastewater</a>
+                              <a href="#">H5N1 Wastewater</a>
+                              <a href="#">All Metagenomes</a>
+                          </div>
+                      </div>
+                  </div>
+                  <div class="nav-item">
+                      <a href="#">Searches <i class="fas fa-chevron-down dropdown-icon"></i></a>
+                      <div class="dropdown-content">
+                          <div class="dropdown-section">
+                              <h3>Advanced Search</h3>
+                              <a href="/searches/TaxaSearch">Taxa</a>
+                              <a href="/searches/GenomeSearch">Genomes</a>
+                              <a href="/searches/GenomicFeatureSearch">Features</a>
+                              <a href="/searches/ProteinSearch">Proteins</a>
+                              <a href="/searches/SpecialtyGeneSearch">Specialty Genes</a>
+                              <a href="/searches/PathwaySearch">Pathways</a>
+                              <a href="/searches/SubsystemSearch">Subsystems</a>
+                          </div>
+                      </div>
+                  </div>
+                  <div class="nav-item">
+                      <a href="#">Tools <i class="fas fa-chevron-down dropdown-icon"></i></a>
+                      <div class="dropdown-content two-columns">
+                          <div class="dropdown-column" style="flex: 1; min-width: 280px;">
+                              <div class="dropdown-section">
+                                  <h3>Genomics</h3>
+                                  <a href="/app/Assembly2">Genome Assembly</a>
+                                  <a href="/app/Annotation">Genome Annotation</a>
+                                  <a href="/app/ComprehensiveGenomeAnalysis">Comprehensive Genome Analysis (B)</a>
+                                  <a href="/app/Homology">BLAST</a>
+                                  <a href="/app/GenomeDistance">Similar Genome Finder</a>
+                              </div>
+                              <div class="dropdown-section">
+                                  <h3>Phylogenomics</h3>
+                                  <a href="/app/PhylogeneticTree">Bacterial Genome Tree</a>
+                                  <a href="/app/ViralGenomeTree">Viral Genome Tree</a>
+                                  <a href="/app/GeneTree">Gene Protein Tree</a>
+                              </div>
+                              <div class="dropdown-section">
+                                  <h3>Protein Tools</h3>
+                                  <a href="/app/MSA">MSA and SNP Analysis</a>
+                                  <a href="/app/SeqComparison">Proteome Comparison</a>
+                                  <a href="/app/ComparativeSystems">Comparative Systems</a>
+                              </div>
+                          </div>
+                          <div class="dropdown-column" style="flex: 1; min-width: 280px;">
+                              <div class="dropdown-section">
+                                  <h3>Metagenomics</h3>
+                                  <a href="/app/TaxonomicClassification">Taxonomic Classification</a>
+                                  <a href="/app/MetagenomicBinning">Metagenomic Binning</a>
+                                  <a href="/app/MetagenomicReadMapping">Metagenomic Read Mapping</a>
+                              </div>
+                              <div class="dropdown-section">
+                                  <h3>Viral Tools</h3>
+                                  <a href="/app/ComprehensiveSARS2Analysis">SARS-COV-2 Genome Analysis</a>
+                                  <a href="/app/SARS2Wastewater">SARS-CoV-2 Wastewater Analysis</a>
+                                  <a href="/app/SubspeciesClassification">Subspecies Classification</a>
+                              </div>
+                              <div class="dropdown-section">
+                                  <h3>Outbreak Tracker</h3>
+                                  <a href="/outbreaks/Mpox/#view_tab=overview">Monkeypox virus</a>
+                                  <a href="/outbreaks/H5N1/#view_tab=overview">Influenza A/H5N1</a>
+                                  <a href="/outbreaks/SARSCoV2/#view_tab=overview">SARS-COV-2</a>
+                              </div>
+                          </div>
+                      </div>
+                  </div>
+                  <div class="nav-item">
+                      <a href="#">Workspaces <i class="fas fa-chevron-down dropdown-icon"></i></a>
+                      <div class="dropdown-content">
+                          <div class="dropdown-section">
+                              <h3>My Data</h3>
+                              <a href="/job">My Jobs</a>
+                              <a href="view/GenomeList/?eq(public,false)">My Genomes</a>
+                              <a href="view/GenomeList/?eq(public,false)">My BioProjects</a>
+                          </div>
+                          <div class="dropdown-section">
+                              <h3>Public Data</h3>
+                              <a href="#">MAAGE Genomes</a>
+                              <a href="#">MAAGE BioProjects</a>
+                          </div>
+                      </div>
+                  </div>
+                  <div class="nav-item">
+                      <a href="#">About <i class="fas fa-chevron-down dropdown-icon"></i></a>
+                      <div class="dropdown-content">
+                          <div class="dropdown-section">
+                              <h3>MAAGE</h3>
+                              <a href="/about">About Us</a>
+                              <a href="/team">Team Members</a>
+                              <a href="/advisory-boards">Advisory Boards</a>
+                              <a href="#">Contact Us</a>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+          </div>
+    
+        <div class="navbar-right">
+            <button class="search-icon">
+                <i class="fas fa-search text-[var(--maage-secondary-800)] hover:opacity-80"></i>
+            </button>
+            <div class="HideWithAuth authLinks showOnLoad dijitHidden">
+                <a class="inline-block rounded-md bg-[#F7F6F4] px-10 py-2 text-md font-medium text-secondary-700 shadaow-md transition hover:bg-[#fafafa] hover:scale-110 hover:shadow-xl focus:ring-3 focus:outline-hidden mr-[10px]"
+                    href="/register">
+                    Register
+                </a>
+                <a class="inline-block rounded-md bg-[var(--maage-secondary-600)] px-12 py-2 text-md font-medium text-white shadow-md transition hover:bg-[var(--maage-secondary-700)]  hover:scale-110 hover:shadow-xl focus:ring-3 focus:outline-hidden mr-[10px]"
+                    href="/login">
+                    Login
+                </a>
+            </div>
+            <button id="mobile-menu-toggle" class="mobile-menu-toggle">
+                <i class="fas fa-bars"></i>
+            </button>
+        </div>
+    
+                <!-- bvbrc -->
+            <!-- <div id="bv-brc-right-header">
+                <div class="HideWithAuth authLinks showOnLoad dijitHidden">
+                    <a class="auth-button navigationLink" href="/register">Register</a>
+                    <a class="auth-button navigationLink" href="/login">Sign In</a>
+                </div>
+    
+                <div id="mobile-search-icon">
+                    <button class="search-icon" onclick="toggleSearch()">
+                        <span class="icon-search fa-2x"></span>
+                    </button>
+                </div>
+    
+                <div class="showOnLoad ShowWithAuth dijitHidden">
+                    <div class="showOnLoad ShowWithAuth dijitHidden topMenuButtonIcon"
+                         data-dojo-type="dijit/form/DropDownButton" data-dojo-props="iconClass:'icon-user fa-2x login-btn'">
+                        <span></span>
+                        <div class="warning_icon user_warning_icon icon-warning fa fa-1x"> </div>
+                        <div data-dojo-type="p3/widget/TooltipDialog">
+                            <div>Signed in as <span id="signedInAs" style="font-weight:bold;"></span></div>
+                            <hr>
+                            <div><a class="userProfile">Account Settings <i class="warning_icon account-settings-warning icon-warning fa fa-1x" style="vertical-align:middle;"> </i></a></div>
+                            <div><a class="sulogin">SU Login</a></div>
+                            <div><a class="suSwitchBack" onclick="window.App.suSwitchBack()" style="display:none">SU Switch Back</a></div>
+                            <div><a class="logoutLink" onclick="window.App.logout()">Logout</a></div>
+                        </div>
+                    </div>
+                </div>
+    
+                <div id="mobile-nav-icon">
+                    <button class="hamburger-icon" onclick="toggleMenu()">
+                        <span class="icon-bars fa-2x"></span>
+                    </button>
+                </div>
+            </div> -->
+    
+        </div>
+        <!-- end navbar -->
+    
+    
+      <!-- Search Bar Flyout -->
+      <div id="search-flyout" class="search-flyout">
+          <div class="search-container">
+              <i class="fas fa-search"></i>
+              <input type="text" placeholder="Search organisms, genomes, pathways..." autofocus>
+              <button class="search-close"><i class="fas fa-times"></i></button>
+          </div>
+      </div>
+    </div>
+    </div>
