@@ -241,7 +241,7 @@
           </div>
 
           <div class="maage-navbar-right flex items-center gap-4 h-full">
-            <button class="maage-search-button flex items-center justify-center w-10 h-10 rounded-full text-maage-secondary-700 transition-colors duration-200 hover:bg-maage-secondary-100" id="maage-search-button" aria-label="Search">
+            <button class="maage-search-button flex items-center justify-center w-10 h-10 rounded-full text-maage-secondary-700 transition-colors duration-200 hover:bg-maage-secondary-100" id="maage-search-button" aria-label="Search" title="Search">
               <svg class="maage-icon w-5 h-5" viewBox="0 0 24 24">
                 <circle cx="11" cy="11" r="8" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"></circle>
                 <line x1="21" y1="21" x2="16.65" y2="16.65" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"></line>
@@ -253,8 +253,7 @@
               <button class="maage-register-button py-2 px-4 font-medium text-white bg-maage-secondary-600 rounded-md transition-colors duration-200 flex items-center h-10 hover:bg-maage-secondary-700">Register</button>
             </div>
 
-            <button class="maage-mobile-menu-toggle md:hidden flex items-center justify-center w-10 h-10 rounded-full text-maage-secondary-700 transition-colors duration-200 hover:bg-maage-secondary-100" id="maage-mobile-menu-toggle" aria-label="Menu">
-              <svg class="maage-icon w-5 h-5" id="maage-menu-icon" viewBox="0  aria-label="Menu">
+            <button class="maage-mobile-menu-toggle md:hidden flex items-center justify-center w-10 h-10 rounded-full text-maage-secondary-700 transition-colors duration-200 hover:bg-maage-secondary-100" id="maage-mobile-menu-toggle" aria-label="Toggle menu" title="Toggle menu">
               <svg class="maage-icon w-5 h-5" id="maage-menu-icon" viewBox="0 0 24 24">
                 <line x1="3" y1="12" x2="21" y2="12" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"></line>
                 <line x1="3" y1="6" x2="21" y2="6" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"></line>
@@ -279,7 +278,7 @@
           </svg>
           <input type="search" class="maage-search-input w-full py-2 px-10 text-sm border border-gray-200 rounded-md bg-white outline-none transition-all duration-200 focus:border-maage-secondary-400 focus:shadow-[0_0_0_2px_rgba(100,155,175,0.2)]" id="maage-search-input" placeholder="Search organisms, genomes, pathways...">
           <button class="maage-search-close absolute right-3 top-1/2 -translate-y-1/2 text-gray-400 bg-transparent border-0 cursor-pointer p-1 flex items-center justify-center" id="maage-search-close">
-            <svg class="maage-icon w-5 h-5" viewBox="0 0 24 24">
+          <button class="maage-search-close absolute right-3 top-1/2 -translate-y-1/2 text-gray-400 bg-transparent border-0 cursor-pointer p-1 flex items-center justify-center" id="maage-search-close" aria-label="Close search" title="Close search">
               <line x1="18" y1="6" x2="6" y2="18" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"></line>
               <line x1="6" y1="6" x2="18" y2="18" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"></line>
             </svg>
@@ -288,10 +287,24 @@
       </div>
     </div>
 
+    <main class="maage-main py-12">
+      <div class="maage-container w-full max-w-[1400px] mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="maage-hero max-w-3xl mx-auto text-center">
+          <h1 class="maage-hero-title text-5xl font-bold text-maage-secondary-900 leading-tight mb-6">MAAGE Dropdown Menu Demo</h1>
+          <p class="maage-hero-description text-lg text-maage-secondary-700 mb-10">
+            Explore the sleek dropdown menu in the navigation bar above. Try hovering over "Data", "Tools", "Workspaces", or "Resources" to see the dropdown in action.
+          </p>
+          <div class="maage-hero-buttons flex gap-4 justify-center">
+            <button class="maage-primary-button py-2.5 px-5 font-medium text-white bg-maage-primary-600 rounded-md transition-colors duration-200 hover:bg-maage-primary-700">Learn More</button>
+            <button class="maage-secondary-button py-2.5 px-5 font-medium text-maage-secondary-700 bg-transparent border border-maage-secondary-300 rounded-md transition-all duration-200 hover:bg-maage-secondary-50">Documentation</button>
+          </div>
+        </div>
+      </div>
+    </main>
   </div>
 
   <script>
-    // DOM Elements
+
     const navItems = document.querySelectorAll('.maage-nav-item');
     const mobileMenuToggle = document.getElementById('maage-mobile-menu-toggle');
     const navItemsContainer = document.getElementById('maage-nav-items');
@@ -302,27 +315,26 @@
     const searchInput = document.getElementById('maage-search-input');
     const searchClose = document.getElementById('maage-search-close');
 
-    // Dropdown Menu Functionality
+
     navItems.forEach(item => {
       const link = item.querySelector('.maage-nav-link');
 
-      // Toggle dropdown on click
       link.addEventListener('click', function(e) {
         e.preventDefault();
 
-        // Close other dropdowns
+
         navItems.forEach(otherItem => {
           if (otherItem !== item) {
             otherItem.classList.remove('active');
           }
         });
 
-        // Toggle current dropdown
+
         item.classList.toggle('active');
       });
     });
 
-    // Close dropdowns when clicking outside
+
     document.addEventListener('click', function(e) {
       if (!e.target.closest('.maage-nav-item')) {
         navItems.forEach(item => {
@@ -331,11 +343,10 @@
       }
     });
 
-    // Mobile Menu Toggle
+
     mobileMenuToggle.addEventListener('click', function() {
       navItemsContainer.classList.toggle('show');
 
-      // Toggle icons
       if (navItemsContainer.classList.contains('show')) {
         menuIcon.classList.add('hidden');
         closeIcon.classList.remove('hidden');
@@ -345,7 +356,7 @@
       }
     });
 
-    // Search Functionality
+
     searchButton.addEventListener('click', function() {
       searchOverlay.classList.add('show');
       searchInput.focus();
@@ -355,14 +366,12 @@
       searchOverlay.classList.remove('show');
     });
 
-    // Close search on escape key
     document.addEventListener('keydown', function(e) {
       if (e.key === 'Escape' && searchOverlay.classList.contains('show')) {
         searchOverlay.classList.remove('show');
       }
     });
 
-    // Close mobile menu when window is resized to desktop size
     window.addEventListener('resize', function() {
       if (window.innerWidth > 768 && navItemsContainer.classList.contains('show')) {
         navItemsContainer.classList.remove('show');

@@ -1,12 +1,67 @@
 <script src="https://cdn.tailwindcss.com"></script>
 <script>
   tailwind.config = {
+    safelist: [
+    'group-[.active]:opacity-100',
+    'group-[.active]:translate-y-0',
+    'group-[.active]:pointer-events-auto'
+    ],
     theme: {
       extend: {
+        fontFamily: {
+          heading: ['Poppins', 'sans-serif'],
+          body: ['Inter', 'sans-serif'],
+          mono: ['JetBrains Mono', 'monospace']
+        },
         colors: {
-          red: '#da373d',
+          maage: {
+            primary: {
+              50: '#f6f9f8', 100: '#e5f1e9', 200: '#d2e5db',
+              300: '#b3d1c2', 400: '#92baa8', 500: '#5b9f83',
+              600: '#44856e', 700: '#3b735e', 800: '#315d4c',
+              900: '#2a4b40', 950: '#192f28'
+            },
+            secondary: {
+              50: '#f5f9fa', 100: '#e7f0f3', 200: '#d2e4ea',
+              300: '#b3d0db', 400: '#8fb7c6', 500: '#679fb7',
+              600: '#4d85a2', 700: '#446c83', 800: '#3c5867',
+              900: '#344855', 950: '#1d2b35'
+            },
+            tertiary: {
+              50: '#fefcf5', 100: '#fdf7e6', 200: '#faeccc',
+              300: '#f4dfb0', 400: '#eacb89', 500: '#ddaf60',
+              600: '#c79547', 700: '#a87634', 800: '#895c2b',
+              900: '#6c4723', 950: '#3c2913'
+            },
+            success: { 50: '#f2fbf5', 500: '#4ba675', 600: '#3d8d61' },
+            warning: { 50: '#fff9eb', 500: '#f0b429', 600: '#d99a1c' },
+            error: { 50: '#fef2f2', 500: '#d9534f', 600: '#c0392b' },
+            info: { 50: '#eef6fb', 500: '#5b9bd5', 600: '#417cbf' },
+            text: {
+              DEFAULT: '#212529',
+              muted: '#495057',
+              subtle: '#6c757d',
+              inverse: '#f8f9fa',
+              link: '#4d85a2'
+            },
+            bg: {
+              DEFAULT: '#f8f9fa',
+              subtle: '#f1f3f5',
+              muted: '#e9ecef',
+              surface: '#ffffff',
+              border: '#dee2e6'
+            },
+            dataviz: {
+              1: '#5fa588', 2: '#679fb7', 3: '#ecc188', 4: '#b3d1c2',
+              5: '#b3d0db', 6: '#f4dfb3', 7: '#498d73', 8: '#4d85a2',
+              9: '#da8640', 10: '#8fb7c6', 11: '#efca92', 12: '#d2e5db',
+              13: '#446c83', 14: '#be6a2e', 15: '#e5aa6d', 16: '#3b735e',
+              17: '#3c5867', 18: '#9a5929', 19: '#5b9bd5', 20: '#4ba675'
+            }
+          }
         }
       }
-    }
+    },
+    plugins: []
   }
 </script>
