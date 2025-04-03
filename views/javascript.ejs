@@ -9,10 +9,10 @@
 	  }
 	</script>
 
-
+<script src="https://unpkg.com/lucide@latest"></script>
 <script>
-	lucide.createIcons();
-  </script>
+lucide.createIcons();
+</script>
 
 
 	<!-- Scripts -->
@@ -68,8 +68,115 @@
 	  </script>
 	<% } %>
 
+	<script>
+		document.addEventListener('DOMContentLoaded', function() {
+    // Dropdown menu functionality
+    const navItems = document.querySelectorAll('.nav-item');
 
-	<script src="/maage/js/navbar.js"></script>
+    // Add click event to each nav item with dropdown
+    navItems.forEach(item => {
+        const link = item.querySelector('.nav-link');
+        const dropdownId = item.getAttribute('data-dropdown');
+
+        if (link && dropdownId) {
+            const dropdown = document.getElementById(`${dropdownId}-dropdown`);
+
+            if (dropdown) {
+                link.addEventListener('click', function(e) {
+                    e.preventDefault();
+                    e.stopPropagation();
+
+                    // Close all other open dropdowns
+                    navItems.forEach(otherItem => {
+                        if (otherItem !== item) {
+                            otherItem.classList.remove('active');
+                            const otherDropdownId = otherItem.getAttribute('data-dropdown');
+                            if (otherDropdownId) {
+                                const otherDropdown = document.getElementById(`${otherDropdownId}-dropdown`);
+                                if (otherDropdown) {
+                                    otherDropdown.classList.remove('show');
+                                }
+                            }
+                        }
+                    });
+
+                    // Toggle current dropdown
+                    item.classList.toggle('active');
+                    dropdown.classList.toggle('show');
+                });
+            }
+        }
+    });
+
+    // Close dropdown when clicking outside
+    document.addEventListener('click', function(e) {
+        navItems.forEach(item => {
+            const dropdownId = item.getAttribute('data-dropdown');
+            if (dropdownId) {
+                const dropdown = document.getElementById(`${dropdownId}-dropdown`);
+                if (dropdown && !item.contains(e.target)) {
+                    item.classList.remove('active');
+                    dropdown.classList.remove('show');
+                }
+            }
+        });
+    });
+
+    // Search functionality
+    const searchToggle = document.getElementById('search-toggle');
+    const searchFlyout = document.getElementById('search-flyout');
+    const searchClose = document.getElementById('search-close');
+
+    if (searchToggle && searchFlyout && searchClose) {
+        searchToggle.addEventListener('click', function() {
+            searchFlyout.classList.add('active');
+            setTimeout(() => {
+                const searchInput = searchFlyout.querySelector('input');
+                if (searchInput) searchInput.focus();
+            }, 300);
+        });
+
+        searchClose.addEventListener('click', function() {
+            searchFlyout.classList.remove('active');
+        });
+
+        // Prevent clicks inside search flyout from closing it
+        searchFlyout.addEventListener('click', function(e) {
+            e.stopPropagation();
+        });
+    }
+
+    // Mobile menu functionality
+    const mobileMenuToggle = document.getElementById('mobile-menu-toggle');
+    const mobileMenu = document.getElementById('mobile-menu');
+
+    if (mobileMenuToggle && mobileMenu) {
+        mobileMenuToggle.addEventListener('click', function() {
+            mobileMenu.classList.toggle('show');
+
+            // Change icon based on menu state
+            const icon = this.querySelector('i');
+            if (mobileMenu.classList.contains('show')) {
+                icon.classList.remove('fa-bars');
+                icon.classList.add('fa-times');
+            } else {
+                icon.classList.remove('fa-times');
+                icon.classList.add('fa-bars');
+            }
+        });
+
+        // Close menu when clicking outside
+        document.addEventListener('click', function(event) {
+            if (!mobileMenu.contains(event.target) && !mobileMenuToggle.contains(event.target) && mobileMenu.classList.contains('show')) {
+                mobileMenu.classList.remove('show');
+                const icon = mobileMenuToggle.querySelector('i');
+                icon.classList.remove('fa-times');
+                icon.classList.add('fa-bars');
+            }
+        });
+    }
+});
+	</script>
 
 	<!-- Google Analytics 4 -->
 	<% if (request && request.applicationOptions.gaID) { %>
