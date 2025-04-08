@@ -9,10 +9,11 @@
 	  }
 	</script>
 
+<script src="https://unpkg.com/lucide@latest"></script>
 <script>
-	// Initialize Lucide icons
-	lucide.createIcons();
+lucide.createIcons();
 </script>
+
 
 	<!-- Scripts -->
 	<%
@@ -34,38 +35,6 @@
 	  <% }) %>
 	<% } %>
 
-	<script type="text/javascript">
-	  function toggleMenu() {
-		const hamburgerButton = document.querySelector('.hamburger-icon');
-		const menu = document.getElementById("mobile-navbar");
-
-		hamburgerButton.classList.toggle('open');
-		menu.classList.toggle("hidden");
-	  }
-
-	  function toggleSubMenu(header) {
-		const subMenu = header.nextElementSibling; // Get the the sub-menu
-		const icon = header.querySelector('.icon-chevron-down');
-
-		if (subMenu.style.display === "block") {
-		  header.classList.remove('open');
-		  subMenu.style.display = "none";
-		  icon.classList.remove('open');
-		} else {
-		  header.classList.add('open');
-		  subMenu.style.display = "block";
-		  icon.classList.add('open');
-		}
-	  }
-
-	  function toggleSearch() {
-		const searchButton = document.querySelector('.search-icon');
-		const searchbar = document.getElementById("mobile-searchbar");
-
-		searchButton.classList.toggle('open');
-		searchbar.classList.toggle("hidden");
-	  }
-	</script>
 
 	<% if (request && request.production) { %>
 	  <script src="/js/<%- request.package.version %>/dojo/dojo.js"></script>
@@ -98,19 +67,131 @@
 		});
 	  </script>
 	<% } %>
-		  <!-- Google Analytics 4 -->
-		  <% if (request && request.applicationOptions.gaID) { %>
-			<!-- Global site tag (gtag.js) - Google Analytics -->
-			<script async src="https://www.googletagmanager.com/gtag/js?id=<%- request.applicationOptions.gaID %>"></script>
-			<script>
-			window.dataLayer = window.dataLayer || [];
-			function gtag(){dataLayer.push(arguments);}
-			gtag('js', new Date());
 
-			gtag('config', '<%- request.applicationOptions.gaID %>', {
-			  'link_attribution': true
-			});
-			</script>
-			<% } %>
+	<script>
+		document.addEventListener('DOMContentLoaded', function() {
+    // Dropdown menu functionality
+    const navItems = document.querySelectorAll('.nav-item');
 
-			<script src="./public/js/maage/maage-web.js"></script>
+    // Add click event to each nav item with dropdown
+    navItems.forEach(item => {
+        const link = item.querySelector('.nav-link');
+        const dropdownId = item.getAttribute('data-dropdown');
+
+        if (link && dropdownId) {
+            const dropdown = document.getElementById(`${dropdownId}-dropdown`);
+
+            if (dropdown) {
+                link.addEventListener('click', function(e) {
+                    e.preventDefault();
+                    e.stopPropagation();
+
+                    // Close all other open dropdowns
+                    navItems.forEach(otherItem => {
+                        if (otherItem !== item) {
+                            otherItem.classList.remove('active');
+                            const otherDropdownId = otherItem.getAttribute('data-dropdown');
+                            if (otherDropdownId) {
+                                const otherDropdown = document.getElementById(`${otherDropdownId}-dropdown`);
+                                if (otherDropdown) {
+                                    otherDropdown.classList.remove('show');
+                                }
+                            }
+                        }
+                    });
+
+                    // Toggle current dropdown
+                    item.classList.toggle('active');
+                    dropdown.classList.toggle('show');
+                });
+            }
+        }
+    });
+
+    // Close dropdown when clicking outside
+    document.addEventListener('click', function(e) {
+        navItems.forEach(item => {
+            const dropdownId = item.getAttribute('data-dropdown');
+            if (dropdownId) {
+                const dropdown = document.getElementById(`${dropdownId}-dropdown`);
+                if (dropdown && !item.contains(e.target)) {
+                    item.classList.remove('active');
+                    dropdown.classList.remove('show');
+                }
+            }
+        });
+    });
+
+    // Search functionality
+    const searchToggle = document.getElementById('search-toggle');
+    const searchFlyout = document.getElementById('search-flyout');
+    const searchClose = document.getElementById('search-close');
+
+    if (searchToggle && searchFlyout && searchClose) {
+        searchToggle.addEventListener('click', function() {
+            searchFlyout.classList.add('active');
+            setTimeout(() => {
+                const searchInput = searchFlyout.querySelector('input');
+                if (searchInput) searchInput.focus();
+            }, 300);
+        });
+
+        searchClose.addEventListener('click', function() {
+            searchFlyout.classList.remove('active');
+        });
+
+        // Prevent clicks inside search flyout from closing it
+        searchFlyout.addEventListener('click', function(e) {
+            e.stopPropagation();
+        });
+    }
+
+    // Mobile menu functionality
+    const mobileMenuToggle = document.getElementById('mobile-menu-toggle');
+    const mobileMenu = document.getElementById('mobile-menu');
+
+    if (mobileMenuToggle && mobileMenu) {
+        mobileMenuToggle.addEventListener('click', function() {
+            mobileMenu.classList.toggle('show');
+
+            // Change icon based on menu state
+            const icon = this.querySelector('i');
+            if (mobileMenu.classList.contains('show')) {
+                icon.classList.remove('fa-bars');
+                icon.classList.add('fa-times');
+            } else {
+                icon.classList.remove('fa-times');
+                icon.classList.add('fa-bars');
+            }
+        });
+
+        // Close menu when clicking outside
+        document.addEventListener('click', function(event) {
+            if (!mobileMenu.contains(event.target) && !mobileMenuToggle.contains(event.target) && mobileMenu.classList.contains('show')) {
+                mobileMenu.classList.remove('show');
+                const icon = mobileMenuToggle.querySelector('i');
+                icon.classList.remove('fa-times');
+                icon.classList.add('fa-bars');
+            }
+        });
+    }
+});
+	</script>
+
+	<!-- Google Analytics 4 -->
+	<% if (request && request.applicationOptions.gaID) { %>
+		<!-- Global site tag (gtag.js) - Google Analytics -->
+		<script async src="https://www.googletagmanager.com/gtag/js?id=<%- request.applicationOptions.gaID %>"></script>
+		<script>
+		window.dataLayer = window.dataLayer || [];
+		function gtag(){dataLayer.push(arguments);}
+		gtag('js', new Date());
+
+		gtag('config', '<%- request.applicationOptions.gaID %>', {
+		  'link_attribution': true
+		});
+		</script>
+	<% } %>
+
+
+</file>

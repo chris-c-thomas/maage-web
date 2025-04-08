@@ -1,748 +1,376 @@
-<div class="inherited-styles-for-exported-element div-search" spellcheck="false" data-ms-editor="true">
-  <h3 class="css_pro-h3-variation-1">SEARCH</h3>
-  <div class="div-global-search">
-    <div style="padding: 6px 0px 2px 2px; flex-grow: 1" class="css_pro-div-variation-2">
-      <div class="div-dijit-FocusMixin-2-GlobalSearch-showOnLoad" id="dijit__FocusMixin_2" lang="en" widgetid="dijit__FocusMixin_2" style="width: 100%; font-size: 1em;">
-        <table style="width:100%;" class="table-GStable">
-          <tbody class="tbody-GSbody" data-protonpass-form="">
-            <tr class="css_pro-tr-variation-3">
-              <td class="td-gs-data-types-dropdown" style="width:120px">
-                <table class="table-style-1" data-dojo-attach-point="_buttonNode,tableNode,focusNode,_popupStateNode" cellspacing="0" cellpadding="0" role="listbox" aria-haspopup="true" tabindex="0" id="dijit_form_Select_4" lang="en" widgetid="dijit_form_Select_4" aria-expanded="false" aria-invalid="false" style="user-select: none; display: inline-block; width: 100%;">
-                  <tbody role="presentation" class="css_pro-tbody-variation-4">
-                    <tr role="presentation" class="css_pro-tr-variation-5">
-                      <td class="td-dijitReset-dijitStretch-dijitButtonContents-unique-1" role="presentation">
-                        <div class="div-dijitReset-dijitInputField-dijitButtonText-unique-1" data-dojo-attach-point="containerNode,textDirNode" role="presentation"><span role="option" aria-selected="true" class="span-style-1-unique-1">All Data Types</span></div>
-                        <div class="div-dijitReset-dijitValidationContainer-unique-1"><input class="input-style-1-unique-1" value="Χ " type="text" tabindex="-1" readonly="readonly" role="presentation"></div><input type="hidden" data-dojo-attach-point="valueNode" value="everything" aria-hidden="true" class="css_pro-input-variation-6">
-                      </td>
-                      <td class="td-style-1-unique-1" data-dojo-attach-point="titleNode" role="presentation"><input class="input-dijitReset-dijitInputField-dijitArrowButtonInner-unique-1" value="▼ " type="text" tabindex="-1" readonly="readonly" role="presentation"></td>
-                    </tr>
-                  </tbody>
-                </table>
-              </td>
+<style>
+  .search-container {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    max-width: 1000px;
+    margin: 0 auto;
+    background-color: white;
+    border-radius: 0.75rem;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+    padding: 2rem;
+  }
 
-              <td class="td-gs-input">
-                <label id="globalSearch" class="label-globalSearch-sr-only">Global Search</label>
-                <div class="div-style-1" id="widget_dijit_form_TextBox_2" role="presentation" lang="en" widgetid="dijit_form_TextBox_2" style="width: 100%;">
-                  <div class="div-dijitReset-dijitInputField-dijitInputContainer"><input class="input-dijit-form-TextBox-2-dijitReset-dijitInputInner" data-dojo-attach-point="textbox,focusNode" autocomplete="off" type="text" tabindex="0" id="dijit_form_TextBox_2" aria-labelledby="globalSearch" value="" spellcheck="false" data-ms-editor="true"><span class="span-dijitPlaceHolder-dijitInputField">Find a gene, genome, microarray, etc</span></div>
-                </div>
-              </td>
+  .search-header {
+    margin-bottom: 1.5rem;
+  }
 
-              <td class="td-gs-advanced-search" style="width:1em;padding:2px;font-size:1em;">
-                <i class="i-fa-fa-1x-icon-search" data-dojo-attach-event="click:onClickAdvanced" title="Advanced Search">
-                </i>
-              </td>
+  .search-title {
+    font-size: 1.875rem;
+    font-weight: 700;
+    color: #1e293b;
+    margin: 0;
+  }
 
-              <td class="td-gs-help" style="width:1em;padding:2px;font-size:1em;">
-                <i class="i-style-1" rel="help:/misc/GlobalSearchOptions" title="Select search options from the dropdown list. Click to view the help information">
-                </i>
-              </td>
+  .search-form {
+    margin-bottom: 1.5rem;
+  }
 
-              <td class="td-gs-options-dropdown" style="width:50px">
-                <table class="table-style-2" data-dojo-attach-point="_buttonNode,tableNode,focusNode,_popupStateNode" cellspacing="0" cellpadding="0" role="listbox" aria-haspopup="true" tabindex="0" id="dijit_form_Select_5" lang="en" widgetid="dijit_form_Select_5" aria-expanded="false" aria-invalid="false" style="user-select: none; display: inline-block; width: 100%;">
-                  <tbody role="presentation" class="css_pro-tbody-variation-7">
-                    <tr role="presentation" class="css_pro-tr-variation-8">
-                      <td class="td-dijitReset-dijitStretch-dijitButtonContents-unique-2" role="presentation">
-                        <div class="div-dijitReset-dijitInputField-dijitButtonText-unique-2" data-dojo-attach-point="containerNode,textDirNode" role="presentation"><span role="option" aria-selected="true" class="span-style-2-unique-2">All terms</span></div>
-                        <div class="div-dijitReset-dijitValidationContainer-unique-2"><input class="input-style-2-unique-2" value="Χ " type="text" tabindex="-1" readonly="readonly" role="presentation"></div><input type="hidden" data-dojo-attach-point="valueNode" value="option_and" aria-hidden="true" class="css_pro-input-variation-9">
-                      </td>
-                      <td class="td-style-2-unique-2" data-dojo-attach-point="titleNode" role="presentation"><input class="input-dijitReset-dijitInputField-dijitArrowButtonInner-unique-2" value="▼ " type="text" tabindex="-1" readonly="readonly" role="presentation"></td>
-                    </tr>
-                  </tbody>
-                </table>
-              </td>
-            </tr>
-          </tbody>
-        </table>
+  .search-input-container {
+    display: flex;
+    width: 100%;
+  }
+
+  .search-input-wrapper {
+    position: relative;
+    flex-grow: 1;
+  }
+
+  .search-icon {
+    position: absolute;
+    top: 50%;
+    left: 0.75rem;
+    transform: translateY(-50%);
+    color: #94a3b8;
+  }
+
+  .search-input {
+    display: block;
+    width: 100%;
+    padding: 1rem;
+    padding-left: 2.5rem;
+    color: #475569;
+    border: 1px solid #e2e8f0;
+    border-radius: 0.5rem 0 0 0.5rem;
+    outline: none;
+    font-size: 1rem;
+  }
+
+  .search-input:focus {
+    border-color: #cbd5e1;
+    box-shadow: 0 0 0 1px #cbd5e1;
+  }
+
+  .search-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+    padding: 1rem 2rem;
+    background-color: var(--maage-secondary-600);
+    color: white;
+    font-weight: 500;
+    border: none;
+    border-radius: 0 0.5rem 0.5rem 0;
+    cursor: pointer;
+    transition: background-color 0.2s;
+  }
+
+  .search-button:hover {
+    background-color: #334155;
+  }
+
+  .advanced-toggle {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    color: #475569;
+    font-weight: 500;
+    background: none;
+    border: none;
+    padding: 0;
+    cursor: pointer;
+    margin-bottom: 0.5rem;
+    transition: color 0.2s;
+  }
+
+  .advanced-toggle:hover {
+    color: #1e293b;
+  }
+
+  .advanced-panel {
+    background-color: #f8fafc;
+    padding: 1rem;
+    border-radius: 0.5rem;
+    margin-bottom: 1rem;
+    display: none;
+    animation: fadeIn 0.2s ease-in-out;
+  }
+
+  @keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+  }
+
+  .advanced-section {
+    margin-bottom: 1rem;
+  }
+
+  .advanced-section:last-child {
+    margin-bottom: 0;
+  }
+
+  .advanced-heading {
+    font-weight: 500;
+    color: #334155;
+    margin-bottom: 0.5rem;
+  }
+
+  .options-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 0.5rem;
+  }
+
+  @media (min-width: 768px) {
+    .options-grid {
+      grid-template-columns: repeat(4, 1fr);
+    }
+  }
+
+  .option-item {
+    display: flex;
+    align-items: center;
+  }
+
+  .option-input {
+    height: 1rem;
+    width: 1rem;
+    color: #475569;
+    border-color: #cbd5e1;
+  }
+
+  .option-input[type="checkbox"] {
+    border-radius: 0.25rem;
+  }
+
+  .option-label {
+    margin-left: 0.5rem;
+    font-size: 0.875rem;
+    color: #334155;
+  }
+
+  .icon {
+    width: 1rem;
+    height: 1rem;
+    stroke: currentColor;
+    stroke-width: 2;
+    fill: none;
+  }
+
+  .search-button .icon {
+    width: 1.25rem;
+    height: 1.25rem;
+  }
+</style>
+</head>
+<body>
+<div class="search-container">
+  <div class="search-header">
+    <h1 class="search-title">Search Data</h1>
+  </div>
+
+  <form class="search-form" id="searchForm">
+    <div class="search-input-container">
+      <div class="search-input-wrapper">
+        <div class="search-icon">
+          <svg class="icon" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+            <circle cx="11" cy="11" r="8"></circle>
+            <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+          </svg>
+        </div>
+        <input
+          type="text"
+          class="search-input"
+          name="searchQuery"
+          id="searchQuery"
+          placeholder="Search genes, genomes, proteins, pathways..."
+        >
+      </div>
+      <button type="submit" class="search-button">
+        Search
+        <svg class="icon" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+          <circle cx="11" cy="11" r="8"></circle>
+          <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+        </svg>
+      </button>
+    </div>
+  </form>
+
+  <div>
+    <button type="button" class="advanced-toggle" id="advancedToggle">
+      <svg class="icon chevron-down" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+        <polyline points="6 9 12 15 18 9"></polyline>
+      </svg>
+      <svg class="icon chevron-up" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" style="display: none;">
+        <polyline points="18 15 12 9 6 15"></polyline>
+      </svg>
+      Search Options
+    </button>
+
+    <div class="advanced-panel" id="advancedPanel">
+      <div class="advanced-section">
+        <h3 class="advanced-heading">Search Type</h3>
+        <div class="options-grid">
+          <div class="option-item">
+            <input
+              type="radio"
+              id="all-terms"
+              name="searchType"
+              value="all-terms"
+              class="option-input"
+              checked
+            >
+            <label for="all-terms" class="option-label">All Terms</label>
+          </div>
+          <div class="option-item">
+            <input
+              type="radio"
+              id="any-terms"
+              name="searchType"
+              value="any-terms"
+              class="option-input"
+            >
+            <label for="any-terms" class="option-label">Any Terms</label>
+          </div>
+          <div class="option-item">
+            <input
+              type="radio"
+              id="exact-terms"
+              name="searchType"
+              value="exact-terms"
+              class="option-input"
+            >
+            <label for="exact-terms" class="option-label">Exact Terms</label>
+          </div>
+          <div class="option-item">
+            <input
+              type="radio"
+              id="all-exact-terms"
+              name="searchType"
+              value="all-exact-terms"
+              class="option-input"
+            >
+            <label for="all-exact-terms" class="option-label">All Exact Terms</label>
+          </div>
+        </div>
+      </div>
+
+      <div class="advanced-section">
+        <h3 class="advanced-heading">Data Types</h3>
+        <div class="options-grid">
+          <div class="option-item">
+            <input
+              type="checkbox"
+              id="taxa"
+              name="dataType"
+              value="taxa"
+              class="option-input"
+            >
+            <label for="taxa" class="option-label">Taxa</label>
+          </div>
+          <div class="option-item">
+            <input
+              type="checkbox"
+              id="genomes"
+              name="dataType"
+              value="genomes"
+              class="option-input"
+            >
+            <label for="genomes" class="option-label">Genomes</label>
+          </div>
+          <div class="option-item">
+            <input
+              type="checkbox"
+              id="features"
+              name="dataType"
+              value="features"
+              class="option-input"
+            >
+            <label for="features" class="option-label">Features</label>
+          </div>
+          <div class="option-item">
+            <input
+              type="checkbox"
+              id="proteins"
+              name="dataType"
+              value="proteins"
+              class="option-input"
+            >
+            <label for="proteins" class="option-label">Proteins</label>
+          </div>
+          <div class="option-item">
+            <input
+              type="checkbox"
+              id="specialty-genes"
+              name="dataType"
+              value="specialty-genes"
+              class="option-input"
+            >
+            <label for="specialty-genes" class="option-label">Specialty Genes</label>
+          </div>
+          <div class="option-item">
+            <input
+              type="checkbox"
+              id="protein-structures"
+              name="dataType"
+              value="protein-structures"
+              class="option-input"
+            >
+            <label for="protein-structures" class="option-label">Protein Structures</label>
+          </div>
+          <div class="option-item">
+            <input
+              type="checkbox"
+              id="pathways"
+              name="dataType"
+              value="pathways"
+              class="option-input"
+            >
+            <label for="pathways" class="option-label">Pathways</label>
+          </div>
+          <div class="option-item">
+            <input
+              type="checkbox"
+              id="subsystems"
+              name="dataType"
+              value="subsystems"
+              class="option-input"
+            >
+            <label for="subsystems" class="option-label">Subsystems</label>
+          </div>
+        </div>
       </div>
     </div>
   </div>
 </div>
-<style>
-body {
-  background: #eee;
-  /* This is just a helper in case the element has a transparent background or white colors. */
-}
 
-.div-search {
-  border-style: initial;
-  border-width: 0;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  margin: 0;
-  padding: 0;
-}
-
-@media only screen and (min-width: 768px) {
-  .div-search {
-    align-items: center;
-    column-gap: 1rem;
-    flex-direction: row;
-    row-gap: 1rem;
-  }
-}
-
-.css_pro-div-variation-2:focus, .css_pro-h3-variation-1:focus, .css_pro-input-variation-6:focus, .css_pro-tbody-variation-4:focus, .css_pro-tr-variation-3:focus, .css_pro-tr-variation-5:focus, .div-dijit-FocusMixin-2-GlobalSearch-showOnLoad:focus, .div-dijitReset-dijitInputField-dijitButtonText-unique-1:focus, .div-dijitReset-dijitInputField-dijitInputContainer:focus, .div-dijitReset-dijitValidationContainer-unique-1:focus, .div-global-search:focus, .div-search:focus, .div-style-1:focus, .i-fa-fa-1x-icon-search:focus, .input-dijit-form-TextBox-2-dijitReset-dijitInputInner:focus, .input-dijitReset-dijitInputField-dijitArrowButtonInner-unique-1:focus, .input-style-1-unique-1:focus, .label-globalSearch-sr-only:focus, .span-dijitPlaceHolder-dijitInputField:focus, .span-style-1-unique-1:focus, .table-GStable:focus, .table-style-1:focus, .tbody-GSbody:focus, .td-dijitReset-dijitStretch-dijitButtonContents-unique-1:focus, .td-gs-advanced-search:focus, .td-gs-data-types-dropdown:focus, .td-gs-input:focus, .td-style-1-unique-1:focus {
-  outline: 0;
-}
-
-.css_pro-h3-variation-1 {
-  border-style: initial;
-  border-width: 0;
-  color: #252525;
-  font-family: Roboto, Arial, Helvetica, sans-serif;
-  font-size: 1rem;
-  font-weight: 700;
-  line-height: 1;
-  margin: .5em 0;
-  padding: 0;
-}
-
-.css_pro-div-variation-2, .div-global-search {
-  border-style: initial;
-  border-width: 0;
-  flex-grow: 5;
-  margin: 0;
-  padding: 0;
-}
-
-.css_pro-div-variation-2 {
-  flex-grow: 1;
-  padding: 6px 0 2px 2px;
-}
-
-.div-dijit-FocusMixin-2-GlobalSearch-showOnLoad, .table-GStable {
-  border-radius: 4px;
-  border-style: initial;
-  border-width: 0;
-  margin: 0;
-  padding: 0;
-  width: 100%;
-}
-
-.div-dijit-FocusMixin-2-GlobalSearch-showOnLoad {
-  background-color: #fff;
-  font-size: 1em;
-}
-
-.table-GStable {
-  border-collapse: collapse;
-  font-size: 100%;
-  -webkit-border-horizontal-spacing: 0;
-  -webkit-border-vertical-spacing: 0;
-}
-
-.tbody-GSbody {
-  border: solid #015994;
-  border-image: none 100% 1 0 stretch;
-  border-width: 2px 2px 4px;
-  margin: 0;
-  padding: 0;
-}
-
-.css_pro-tr-variation-3, .td-gs-data-types-dropdown {
-  border-style: initial;
-  border-width: 0;
-  margin: 0;
-  padding: 0;
-}
-
-.td-gs-data-types-dropdown {
-  width: 120px;
-}
-
-.css_pro-tbody-variation-4, .css_pro-tr-variation-5, .table-style-1 {
-  border-style: initial;
-  border-width: 0;
-  cursor: pointer;
-  margin: 0;
-  -webkit-tap-highlight-color: transparent;
-}
-
-.table-style-1 {
-  background-color: #fff;
-  background-position: left top;
-  background-repeat: no-repeat;
-  border-collapse: separate;
-  border-radius: 4px;
-  box-sizing: content-box;
-  color: inherit;
-  display: inline-block;
-  font-family: inherit;
-  font-feature-settings: inherit;
-  font-kerning: inherit;
-  font-optical-sizing: inherit;
-  font-size: inherit;
-  font-size-adjust: inherit;
-  font-stretch: inherit;
-  font-style: inherit;
-  font-variant: inherit;
-  font-variant-emoji: inherit;
-  font-variant-position: inherit;
-  font-variation-settings: inherit;
-  font-weight: inherit;
-  line-height: normal;
-  padding: 0 !important;
-  transition-duration: .35s;
-  transition-property: background-color, border;
-  user-select: none;
-  vertical-align: middle;
-  width: 100%;
-}
-
-.css_pro-tbody-variation-4, .css_pro-tr-variation-5 {
-  padding: 0;
-}
-
-.div-dijitReset-dijitInputField-dijitButtonText-unique-1, .div-dijitReset-dijitValidationContainer-unique-1, .span-style-1-unique-1, .td-dijitReset-dijitStretch-dijitButtonContents-unique-1 {
-  color: inherit;
-  font-family: inherit;
-  font-feature-settings: inherit;
-  font-kerning: inherit;
-  font-optical-sizing: inherit;
-  font-size-adjust: inherit;
-  font-stretch: inherit;
-  font-style: inherit;
-  font-variant: inherit;
-  font-variant-emoji: inherit;
-  font-variant-position: inherit;
-  font-variation-settings: inherit;
-  font-weight: inherit;
-  margin: 0;
-  -webkit-tap-highlight-color: transparent;
-  cursor: pointer;
-}
-
-.td-dijitReset-dijitStretch-dijitButtonContents-unique-1 {
-  background-repeat: repeat-x;
-  display: table-cell;
-  font-size: inherit;
-  line-height: 100%;
-  text-align: left;
-  text-wrap-mode: nowrap;
-  white-space-collapse: collapse;
-  border: 1px #b5bcc7;
-  border-right-style: solid;
-  padding: 0;
-  transition-duration: .35s;
-  transition-property: background-color, border;
-  width: 100%;
-}
-
-.div-dijitReset-dijitInputField-dijitButtonText-unique-1, .div-dijitReset-dijitValidationContainer-unique-1, .span-style-1-unique-1 {
-  border-style: initial;
-  border-width: 0;
-  line-height: normal;
-}
-
-.div-dijitReset-dijitInputField-dijitButtonText-unique-1 {
-  float: left;
-  font-size: 14px;
-  padding: 12px 4px;
-  text-align: center;
-  vertical-align: top;
-}
-
-.div-dijitReset-dijitValidationContainer-unique-1, .span-style-1-unique-1 {
-  font-size: inherit;
-  padding: 1px 0;
-}
-
-.span-style-1-unique-1 {
-  display: inline-block;
-  vertical-align: baseline;
-}
-
-.div-dijitReset-dijitValidationContainer-unique-1 {
-  display: none;
-  float: right;
-  text-align: center;
-}
-
-.css_pro-input-variation-6, .input-style-1-unique-1 {
-  margin: 0;
-  -webkit-tap-highlight-color: transparent;
-  cursor: pointer;
-  direction: ltr !important;
-  float: left;
-  height: auto !important;
-  text-align: left !important;
-  text-indent: -2em !important;
-}
-
-.input-style-1-unique-1 {
-  border-style: initial;
-  border-width: 0;
-  color: inherit;
-  font-family: inherit;
-  font-feature-settings: inherit;
-  font-kerning: inherit;
-  font-optical-sizing: inherit;
-  font-size: 14px;
-  font-size-adjust: inherit;
-  font-stretch: inherit;
-  font-style: inherit;
-  font-variant: inherit;
-  font-variant-emoji: inherit;
-  font-variant-position: inherit;
-  font-variation-settings: inherit;
-  font-weight: inherit;
-  line-height: normal;
-  padding-bottom: 12px;
-  padding-left: 0 !important;
-  padding-right: 0 !important;
-  padding-top: 12px;
-}
-
-.css_pro-input-variation-6 {
-  padding: 0;
-}
-
-.input-dijitReset-dijitInputField-dijitArrowButtonInner-unique-1, .td-style-1-unique-1 {
-  color: inherit;
-  cursor: pointer;
-  font-family: inherit;
-  font-feature-settings: inherit;
-  font-kerning: inherit;
-  font-optical-sizing: inherit;
-  font-size-adjust: inherit;
-  font-stretch: inherit;
-  font-style: inherit;
-  font-variant: inherit;
-  font-variant-emoji: inherit;
-  font-variant-position: inherit;
-  font-variation-settings: inherit;
-  font-weight: inherit;
-  vertical-align: middle;
-  -webkit-tap-highlight-color: transparent;
-  margin: 0;
-}
-
-.td-style-1-unique-1 {
-  background-position: right top;
-  font-size: inherit;
-  transition: background-color .3s;
-  text-wrap-mode: nowrap;
-  white-space-collapse: collapse;
-  background-color: #efefef;
-  background-image: none;
-  background-repeat: repeat-x;
-  border: 1px solid #fff;
-  line-height: 100%;
-  padding: 0;
-  text-align: center;
-}
-
-.input-dijitReset-dijitInputField-dijitArrowButtonInner-unique-1 {
-  background-color: initial;
-  background-image: url(https://www.bv-brc.org/dijit/themes/claro/form/images/commonFormArrows.png);
-  background-position: -35px 53%;
-  background-repeat: no-repeat;
-  border-style: initial;
-  border-width: 0;
-  direction: ltr !important;
-  float: left;
-  font-size: 14px;
-  height: auto !important;
-  line-height: normal;
-  padding-bottom: 12px;
-  padding-left: 0 !important;
-  padding-right: 0 !important;
-  padding-top: 12px;
-  text-align: left !important;
-  text-indent: -2em !important;
-  width: 16px;
-}
-
-.td-gs-input {
-  margin: 0;
-}
-
-.div-style-1, .label-globalSearch-sr-only, .td-gs-input {
-  border-style: initial;
-  border-width: 0;
-  padding: 0;
-}
-
-.label-globalSearch-sr-only {
-  height: 1px;
-  margin: -1px;
-  overflow: hidden;
-  position: absolute;
-  width: 1px;
-  clip: rect(0, 0, 0, 0);
-}
-
-.div-style-1 {
-  background-color: #fff;
-  background-position: left top;
-  background-repeat: no-repeat;
-  border-radius: 4px;
-  color: #000;
-  display: inline-block;
-  font-size: inherit;
-  margin: 0;
-  transition-duration: .35s;
-  transition-property: background-color, border;
-  vertical-align: middle;
-  width: 100%;
-}
-
-.div-dijitReset-dijitInputField-dijitInputContainer, .div-style-1, .input-dijit-form-TextBox-2-dijitReset-dijitInputInner {
-  font-family: inherit;
-  font-feature-settings: inherit;
-  font-kerning: inherit;
-  font-optical-sizing: inherit;
-  font-size-adjust: inherit;
-  font-stretch: inherit;
-  font-style: inherit;
-  font-variant: inherit;
-  font-variant-emoji: inherit;
-  font-variant-position: inherit;
-  font-variation-settings: inherit;
-  font-weight: inherit;
-  line-height: normal;
-}
-
-.div-dijitReset-dijitInputField-dijitInputContainer {
-  border-style: initial;
-  border-width: 0;
-  color: inherit;
-  float: none !important;
-  font-size: 14px;
-  margin: 0;
-  overflow: hidden;
-  padding: 12px 8px;
-  position: relative;
-}
-
-.input-dijit-form-TextBox-2-dijitReset-dijitInputInner {
-  background-color: transparent !important;
-  border: 0 initial !important;
-  border-color: initial !important;
-  border-image: initial initial initial initial initial !important;
-  color: #000;
-  float: left;
-  font-size: inherit;
-  margin-bottom: 0;
-  margin-left: 0 !important;
-  margin-right: 0 !important;
-  margin-top: 0;
-  padding-bottom: 1px;
-  padding-left: 0 !important;
-  padding-right: 0 !important;
-  padding-top: 1px;
-  width: 100% !important;
-}
-
-.span-dijitPlaceHolder-dijitInputField {
-  border-style: initial;
-  border-width: 0;
-  color: #aaa;
-  font-style: italic;
-  left: 0;
-  margin: 0;
-  position: absolute;
-  top: 0;
-  white-space-collapse: collapse;
-  text-wrap-mode: nowrap;
-  font-family: inherit;
-  font-size: 14px;
-  padding: 12px 8px;
-  pointer-events: none;
-}
-
-.td-gs-advanced-search {
-  border-style: initial;
-  border-width: 0;
-  font-size: 1em;
-  margin: 0;
-  padding: 2px;
-  width: 1em;
-}
-
-.i-fa-fa-1x-icon-search {
-  font-variant: normal;
-  -webkit-font-smoothing: antialiased;
-  font-variant-emoji: normal;
-  font-weight: 400;
-  line-height: 1;
-  text-transform: none;
-  speak: none;
-  color: #333;
-  cursor: pointer;
-  font-family: icomoon !important;
-}
-
-.i-fa-fa-1x-icon-search:before {
-  content: "";
-}
-
-.i-fa-fa-1x-icon-search:hover {
-  color: #e75200;
-}
-
-.td-gs-help {
-  border-style: initial;
-  border-width: 0;
-  font-size: 1em;
-  margin: 0;
-  padding: 2px;
-  width: 1em;
-}
-
-.i-style-1:focus, .td-gs-help:focus {
-  outline: 0;
-}
-
-.i-style-1 {
-  font-variant: normal;
-  speak: none;
-  font-variant-emoji: normal;
-  font-weight: 400;
-  line-height: 1;
-  text-transform: none;
-  -webkit-font-smoothing: antialiased;
-  color: #333;
-  cursor: pointer;
-  font-family: icomoon !important;
-}
-
-.i-style-1:before {
-  content: "";
-}
-
-.i-style-1:hover {
-  color: #e75200;
-}
-
-.td-gs-options-dropdown {
-  border-style: initial;
-  border-width: 0;
-  margin: 0;
-  padding: 0;
-  width: 50px;
-}
-
-.css_pro-input-variation-9:focus, .css_pro-tbody-variation-7:focus, .css_pro-tr-variation-8:focus, .div-dijitReset-dijitInputField-dijitButtonText-unique-2:focus, .div-dijitReset-dijitValidationContainer-unique-2:focus, .input-dijitReset-dijitInputField-dijitArrowButtonInner-unique-2:focus, .input-style-2-unique-2:focus, .span-style-2-unique-2:focus, .table-style-2:focus, .td-dijitReset-dijitStretch-dijitButtonContents-unique-2:focus, .td-gs-options-dropdown:focus, .td-style-2-unique-2:focus {
-  outline: 0;
-}
-
-.css_pro-tbody-variation-7, .css_pro-tr-variation-8, .table-style-2 {
-  border-style: initial;
-  border-width: 0;
-  margin: 0;
-  -webkit-tap-highlight-color: transparent;
-  cursor: pointer;
-}
-
-.table-style-2 {
-  background-color: #fff;
-  background-position: left top;
-  background-repeat: no-repeat;
-  border-collapse: separate;
-  border-radius: 4px;
-  box-sizing: content-box;
-  color: inherit;
-  display: inline-block;
-  font-family: inherit;
-  font-feature-settings: inherit;
-  font-kerning: inherit;
-  font-optical-sizing: inherit;
-  font-size: inherit;
-  font-size-adjust: inherit;
-  font-stretch: inherit;
-  font-style: inherit;
-  font-variant: inherit;
-  font-variant-emoji: inherit;
-  font-variant-position: inherit;
-  font-variation-settings: inherit;
-  font-weight: inherit;
-  line-height: normal;
-  padding: 0 !important;
-  transition-duration: .35s;
-  transition-property: background-color, border;
-  user-select: none;
-  vertical-align: middle;
-  width: 100%;
-}
-
-.css_pro-tbody-variation-7, .css_pro-tr-variation-8 {
-  padding: 0;
-}
-
-.div-dijitReset-dijitInputField-dijitButtonText-unique-2, .div-dijitReset-dijitValidationContainer-unique-2, .span-style-2-unique-2, .td-dijitReset-dijitStretch-dijitButtonContents-unique-2 {
-  color: inherit;
-  cursor: pointer;
-  font-family: inherit;
-  font-feature-settings: inherit;
-  font-kerning: inherit;
-  font-optical-sizing: inherit;
-  font-size-adjust: inherit;
-  font-stretch: inherit;
-  font-style: inherit;
-  font-variant: inherit;
-  font-variant-emoji: inherit;
-  font-variant-position: inherit;
-  font-variation-settings: inherit;
-  font-weight: inherit;
-  margin: 0;
-  -webkit-tap-highlight-color: transparent;
-}
-
-.td-dijitReset-dijitStretch-dijitButtonContents-unique-2 {
-  background-repeat: repeat-x;
-  display: table-cell;
-  font-size: inherit;
-  line-height: 100%;
-  padding: 0;
-  white-space-collapse: collapse;
-  text-wrap-mode: nowrap;
-  border: 1px #b5bcc7;
-  border-right-style: solid;
-  text-align: left;
-  transition-duration: .35s;
-  transition-property: background-color, border;
-  width: 100%;
-}
-
-.div-dijitReset-dijitInputField-dijitButtonText-unique-2, .div-dijitReset-dijitValidationContainer-unique-2, .span-style-2-unique-2 {
-  border-style: initial;
-  border-width: 0;
-  line-height: normal;
-}
-
-.div-dijitReset-dijitInputField-dijitButtonText-unique-2 {
-  float: left;
-  font-size: 14px;
-  padding: 12px 4px;
-  text-align: center;
-  vertical-align: top;
-}
-
-.div-dijitReset-dijitValidationContainer-unique-2, .span-style-2-unique-2 {
-  font-size: inherit;
-  padding: 1px 0;
-}
-
-.span-style-2-unique-2 {
-  display: inline-block;
-  vertical-align: baseline;
-}
-
-.div-dijitReset-dijitValidationContainer-unique-2 {
-  display: none;
-  float: right;
-  text-align: center;
-}
-
-.css_pro-input-variation-9, .input-style-2-unique-2 {
-  cursor: pointer;
-  margin: 0;
-  -webkit-tap-highlight-color: transparent;
-  direction: ltr !important;
-  float: left;
-  height: auto !important;
-  text-align: left !important;
-  text-indent: -2em !important;
-}
-
-.input-style-2-unique-2 {
-  border-style: initial;
-  border-width: 0;
-  color: inherit;
-  font-family: inherit;
-  font-feature-settings: inherit;
-  font-kerning: inherit;
-  font-optical-sizing: inherit;
-  font-size: 14px;
-  font-size-adjust: inherit;
-  font-stretch: inherit;
-  font-style: inherit;
-  font-variant: inherit;
-  font-variant-emoji: inherit;
-  font-variant-position: inherit;
-  font-variation-settings: inherit;
-  font-weight: inherit;
-  line-height: normal;
-  padding-bottom: 12px;
-  padding-left: 0 !important;
-  padding-right: 0 !important;
-  padding-top: 12px;
-}
-
-.css_pro-input-variation-9 {
-  padding: 0;
-}
-
-.input-dijitReset-dijitInputField-dijitArrowButtonInner-unique-2, .td-style-2-unique-2 {
-  color: inherit;
-  cursor: pointer;
-  font-family: inherit;
-  font-feature-settings: inherit;
-  font-kerning: inherit;
-  font-optical-sizing: inherit;
-  font-size-adjust: inherit;
-  font-stretch: inherit;
-  font-style: inherit;
-  font-variant: inherit;
-  font-variant-emoji: inherit;
-  font-variant-position: inherit;
-  font-variation-settings: inherit;
-  font-weight: inherit;
-  vertical-align: middle;
-  -webkit-tap-highlight-color: transparent;
-  margin: 0;
-}
-
-.td-style-2-unique-2 {
-  background-position: right top;
-  font-size: inherit;
-  text-align: center;
-  transition: background-color .3s;
-  white-space-collapse: collapse;
-  text-wrap-mode: nowrap;
-  background-color: #efefef;
-  background-image: none;
-  background-repeat: repeat-x;
-  border: 1px solid #fff;
-  line-height: 100%;
-  padding: 0;
-}
-
-.input-dijitReset-dijitInputField-dijitArrowButtonInner-unique-2 {
-  background-color: initial;
-  background-image: url(https://www.bv-brc.org/dijit/themes/claro/form/images/commonFormArrows.png);
-  background-position: -35px 53%;
-  background-repeat: no-repeat;
-  border-style: initial;
-  border-width: 0;
-  direction: ltr !important;
-  float: left;
-  font-size: 14px;
-  height: auto !important;
-  line-height: normal;
-  padding-bottom: 12px;
-  padding-left: 0 !important;
-  padding-right: 0 !important;
-  padding-top: 12px;
-  text-align: left !important;
-  text-indent: -2em !important;
-  width: 16px;
-}
-
-.inherited-styles-for-exported-element {
-  color: #333;
-  font-family: Roboto, sans-serif;
-  font-size: .9em;
-  font-size-adjust: none;
-  font-weight: 400;
-  line-height: 1.5;
-  text-align: center;
-}
-
-html {
-  font-size: 14.4px;
-  /* This is IMPORTANT since some copied values use "REM" units */
-}
-</style>
+<script>
+  const advancedToggle = document.getElementById('advancedToggle');
+  const advancedPanel = document.getElementById('advancedPanel');
+  const chevronDown = document.querySelector('.chevron-down');
+  const chevronUp = document.querySelector('.chevron-up');
+
+  advancedToggle.addEventListener('click', function() {
+    const isVisible = advancedPanel.style.display === 'block';
+
+    if (isVisible) {
+      advancedPanel.style.display = 'none';
+      chevronDown.style.display = 'block';
+      chevronUp.style.display = 'none';
+    } else {
+      advancedPanel.style.display = 'block';
+      chevronDown.style.display = 'none';
+      chevronUp.style.display = 'block';
+    }
+  });
+
+</script>
