@@ -47,10 +47,20 @@ define([
     },
 
     startup: function () {
-      if (this._started) {
-        return;
-      }
+      if (this._started) return;
       this.inherited(arguments);
+
+      const query = this.state?.search || 'eq(public,true)';
+
+      if (this.ecIsolationSourceChartNode && !this.ecIsolationSourceChart) {
+        this.ecIsolationSourceChart = new ECDoughnut({
+          query: query
+        }, this.ecIsolationSourceChartNode);
+      }
+
+      if (this.gmSummaryWidget) {
+        this.gmSummaryWidget.set('query', query);
+      }
     }
   });
 });
